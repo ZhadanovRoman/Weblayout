@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8"/>
+        <title>FORM</title>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" ></script>
+       <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+       <link rel= "stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+  </head>
+    <body>
+     <form action ="" method="post" id = "form" >
+       
+      <p>
+       <label for="name">First name:</label>
+         <input  type="text" name="First name" class="txt" id="Fname"/><br/> 
+            <div id = "Firstnamerror"></div>
+          </p>  
+       
+          <p>   
+       <label for="Lastname">Last name:</label>
+         <input  type="text" name="Last name" class="txt" id="Lname"/><br/> 
+            <div id = "Lastnamerror"></div>
+          </p>
+         
+          <p>
+      <label for="BD">Birthday:</label>
+         <input  type="date" id="Birthday1"/><br/> 
+            <div id = "Birthdayerror"></div>
+           </p>
+         
+           <p> 
+            <label for="pol">Gender:</label>
+            <input  type="radio" name="pol" id="pol"/>Woman
+            <input  type="radio" name="pol" checked />Man<br/>
+               
+              </p> 
+
+              <p>
+                <label for="count">Country:</label>
+                  <select  type="select"  id="count1" >
+                    <option>Ukraine</option>
+                    <option>USA</option>
+                    <option>Poland</option>
+                    </select>
+                    <br/>
+                     <div id = "Countryerror" ></div>
+                          </p>
+
+          <p>
+       <label for="password">Password:</label>
+         <input  type="password" name="password" id="password1" /><br/>
+            <div id = "paserror" ></div>
+                 </p>
+
+          <p>
+       <label for="confirmpassword">Confirmpassword:</label>
+         <input  type="password" name="confirmpassword"  id="confirmpassword"/><br/>
+             <div id = "confpaserror"></div><div id = "confpasfalse"></div>
+               </p>
+
+          <p>
+       <label for="e-mail">E-mail:</label>
+         <input  type="text" name="e-mail"  id="e-mail"/><br/>
+             <div id = "mailerror"></div>
+            </p>
+            
+            <p>
+            <label for="Adrs">Address:</label>
+            <input  type="text" name="Address" class="txt" id="Adrs1"/><br/> 
+               <div id = "Adrs1error"></div>
+             </p>  
+            <p>
+         <input type="button" value ="готово" name = "submit" onclick="validate(document.getElementById('form'))"/>
+        </p>
+      </form>
+      <script type="text/javascript">
+            
+            $('#count1').chosen();
+            $('#Birthday1').datepicker();
+              
+                 var key =  /[0-9 a-z_.]+@[0-9a-z-.]+\.[a-z]{2,5}/i;
+                 
+                var txt = document.getElementsByClassName("txt");
+                 var confpas = document.getElementById("confirmpassword");
+                 var mail = document.getElementById("e-mail");
+                 
+  
+            
+                 
+
+          function validate(form){
+                 if(txt.value== "'"){
+                   txt.style.border = "2px solid red";
+                 }
+            
+                 if(Fname.value == "" ){
+                  Fname.style.border = "2px solid red";
+                  Firstnamerror.style.color = "red";
+                  Firstnamerror.textContent = "This field is required";
+                   }
+                 if(Fname.value != ""){
+                   Firstnamerror.textContent = "";
+                   Fname.style.border = "1px solid grey";
+                   }
+                 
+                   if(Lname.value == "" ){
+                  Lname.style.border = "2px solid red";
+                  Lastnamerror.style.color = "red";
+                  Lastnamerror.textContent = "This field is required";
+                   }
+                 if(Lname.value != ""){
+                   Lastnamerror.textContent = "";
+                   Lname.style.border = "1px solid grey";
+                   }
+
+                 if(password1.value == ""){
+                  password1.style.border = "2px solid red";
+                   paserror.textContent = " This field is required ";
+                   paserror.style.color = "red";
+                   }
+                 if(password1.value != ""){
+                   paserror.textContent = "";
+                   password1.style.border = "1px solid grey";
+                   }
+                
+
+                 if( confpas.value =="" ){
+                   confpas.style.border = "2px solid red";
+                   confpasfalse.textContent = "This field is required";
+                   confpasfalse.style.color = "red";
+                   }
+               if(confpas.value != ""){
+                   confpasfalse.textContent = "";
+                   confpasfalse.border = "1px solid grey";
+                }
+
+                 if(confpas.value != password1.value  ){
+                   confpas.style.border = "2px solid red";
+                   confpaserror.textContent = "password is incorrect";
+                   confpaserror.style.color = "red";
+                   }
+
+               if(confpas.value == password1.value){
+                   confpaserror.textContent = "";
+                   confpas.style.border = "1px solid grey";
+               }
+
+                 if(key.test(mail.value) == false){
+                   mail.style.border = "2px solid red";
+                   mailerror.style.color = "red";
+                   mailerror.textContent = "This field is required";
+                   }
+
+                if(key.test(mail.value) == true){
+                   mailerror.textContent = "Email address is not valid";
+                   mail.style.border = "1px solid grey";
+                   }
+
+                   if(Adrs1.value == "" ){
+                    Adrs1.style.border = "2px solid red";
+                    Adrs1error.style.color = "red";
+                    Adrs1error.textContent = "This field is required";
+                   }
+                if(Adrs1.value != ""){
+                  Adrs1error.textContent = "";
+                  Adrs1.style.border = "1px solid grey";
+                   }
+          } 
+            
+          
+      </script>
+    </body>
+</html>
