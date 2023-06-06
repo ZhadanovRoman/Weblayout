@@ -15,8 +15,9 @@ ______
 
 Учебный проект, залит на хостинг- https://zrs-eclid.tmweb.ru/
 
-<img src="https://i.yapx.ru/WHuM8.bmp">,
+
 <img src="https://i.yapx.ru/WHuNAm.jpg">,
+<img src="https://i.yapx.ru/WHuM8.bmp">,
 <img src="https://i.yapx.ru/WHuNDm.jpg">,
 <img src="https://i.yapx.ru/WHuNOm.bmp">,
 <img src="https://i.yapx.ru/WHuNEm.jpg">,
