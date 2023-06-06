@@ -4,8 +4,8 @@ ____
 
 Работающий адаптивный Landing с формой обратной связи -> https://prostudionail.tmweb.ru/
 
-<img src="https://i.yapx.ru/WHo82t.jpg">,
-<img src="https://i.yapx.ru/WHo8vt.jpg">,
-<img src="https://i.yapx.ru/WHo8wt.jpg">,
-<img src="https://i.yapx.ru/WHo8yt.jpg">,
-<img src="https://i.yapx.ru/WHo81t.jpg">
+<img src="https://i.yapx.ru/WHo82m.jpg">,
+<img src="https://i.yapx.ru/WHo8vm.jpg">,
+<img src="https://i.yapx.ru/WHo8wm.jpg">,
+<img src="https://i.yapx.ru/WHo8ym.jpg">,
+<img src="https://i.yapx.ru/WHo81m.jpg">
