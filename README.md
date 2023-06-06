@@ -10,3 +10,14 @@ ____
 <img src="https://i.yapx.ru/WHo8ym.jpg">,
 <img src="https://i.yapx.ru/WHo81m.jpg">,
 <img src="https://i.yapx.ru/WHo80m.jpg">
+
+______
+
+Учебный проект, залит на хостинг- https://zrs-eclid.tmweb.ru/
+
+<img src="https://i.yapx.ru/WHuM8m.bmp">,
+<img src="https://i.yapx.ru/WHuNAm.jpg">,
+<img src="https://i.yapx.ru/WHuNDm.jpg">,
+<img src="https://i.yapx.ru/WHuNOm.bmp">,
+<img src="https://i.yapx.ru/WHuNEm.jpg">,
+<img src="https://i.yapx.ru/WHuNLm.bmp">
