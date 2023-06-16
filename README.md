@@ -5,7 +5,7 @@ ____
 Работающий Landing, адаптив Bootstrap с формой обратной связи,прикрутка яндекс карт, папка Landing_ProStudio, ссылка -> https://prostudionail.tmweb.ru/
 
 <img style="width:200px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio.jpg"> <img style="width:200px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio2.jpg"> <img style="width:200px;"  src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio3.jpg">
-<img style="width:200px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio6.jpg"> <img src="https://i.yapx.ru/WHo81m.jpg"> <img src="https://i.yapx.ru/WHo80m.jpg">
+<img style="width:200px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio6.jpg"> <img style="width:200px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio5.jpg"> <img style="width:200px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio4.jpg">
 
 ______
 
