@@ -12,12 +12,12 @@ ______
 Учебный проект-адаптив, работа с @media запросами,папка Evclid, ссылка- https://zrs-eclid.tmweb.ru/
 
 
-<img src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/zrs-evclid.bmp"> <img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/evclid-lay.jpg"> <img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/evclid-lay2.jpg"> 
+<img src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/zrs-evclid.bmp"> <img style="width:400px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/evclid-lay.jpg"> <img style="width:400px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/evclid-lay2.jpg"> 
 
 
 ______
 
 Учебный проект-адаптив,сетка Bootstrap,папка weblayout_practic 
 
-<img src="https://i.yapx.ru/WHukWm.jpg"> <img src="https://i.yapx.ru/WHukNm.jpg"> <img src="https://i.yapx.ru/WHukOm.jpg">
-<img src="https://i.yapx.ru/WHukPm.bmp"> <img src="https://i.yapx.ru/WHukSm.bmp"> <img src="https://i.yapx.ru/WHukVm.bmp">
+<img style="width:500px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/layout.jpg">
+<img style="width:500px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/layout2.jpg">
