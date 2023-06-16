@@ -12,7 +12,7 @@ ______
 Учебный проект-адаптив, работа с @media запросами,папка Evclid, ссылка- https://zrs-eclid.tmweb.ru/
 
 
-<img src="https://i.yapx.ru/WHuNAm.jpg"> <img src="https://i.yapx.ru/WHuNDm.jpg"> <img src="https://i.yapx.ru/WHuNEm.jpg"> <img src="https://i.yapx.ru/WHuNHm.jpg">
+<img src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/zrs-evclid.bmp"> <img src="https://i.yapx.ru/WHuNDm.jpg"> <img src="https://i.yapx.ru/WHuNEm.jpg"> <img src="https://i.yapx.ru/WHuNHm.jpg">
 <img src="https://i.yapx.ru/WHuNLm.bmp"> <img src="https://i.yapx.ru/WHuNOm.bmp">
 
 ______
