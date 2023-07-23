@@ -1,0 +1,164 @@
+.cards-left-btn {
+    transform: rotate(180deg);
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.cards-right-btn {
+    cursor: pointer;
+}
+
+.central-block {
+   width: 63%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5.1%;
+}
+
+.forecast-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 38px;
+    padding-top: 42px;
+}
+
+.forecast-nav {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 7%;
+    margin-bottom: 25px;
+}
+
+.forecast-by-week,
+.forecast-by-hour {
+    margin-right: 16px;
+    padding-bottom: 0.1%;
+    font-family: var(--fontf);
+    font-weight: var(--fontW7);
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--hintAC);
+    cursor: pointer;
+}
+
+.forecast-by-week__before {
+    color: var(--gray48);
+    border-bottom: 2px solid var(--gray48);
+    margin-bottom: -1px;
+}
+
+.forecast-nav-spanJS {
+    border-bottom: 2px solid var(--gray48);
+    margin-bottom: -1px;
+}
+
+
+.forecast-nav-title {
+    margin: 0;
+
+}
+
+.forecast-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    height: max-content;
+
+}
+
+.forecast-cards-hour,
+.forecast-cards-week {
+    display: flex;
+    width: 85.3%;
+    height: max-content;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.forecast-cards-hour {
+    display: none;
+}
+
+.forecast-card-hour,
+.forecast-card-week {
+    position: relative;
+    width: 13.8%;
+    height: 114px;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--whiteFF);
+    border-radius: 8.362px;
+    filter: drop-shadow(0 7px 12px rgba(0, 0, 0, 0.05));
+}
+
+/*//////////*/
+.forecast-card-hour::after,
+.forecast-card-week::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*/////CARD_WEEK_LINK//////*/
+.forecast-card-week:nth-child(n):after {
+    background-image: url(../img/weather-shtorm.svg);
+}
+
+.forecast-card-week:nth-child(-n+3):after {
+    background-image: url(../img/weather-rain.svg);
+}
+
+.forecast-card-week:first-child::after {
+    background-image: url(../img/weather-calm.svg);
+}
+.forecast-card-week:nth-child(7){
+    display: none;
+}
+/*/////CARD_HOUR_LINK//////*/
+
+.forecast-card-hour:nth-child(n)::after {
+    background-image: url(../img/weather-calm.svg);
+}
+.forecast-card-hour:nth-child(9)::after,
+.forecast-card-hour:nth-child(6)::after,
+.forecast-card-hour:nth-child(5)::after {
+    background-image: url(../img/weather-shtorm.svg)
+}
+.forecast-card-hour:nth-child(n+7){
+    display: none;
+}
+
+.card-hour-time,
+.card-hour-temperature,
+.card-week-day,
+.card-week-number,
+.card-week-month,
+.card-week-temp,
+.card-week-perceivedtemp {
+    font-family: var(--fontf);
+    font-weight: var(--fontW4);
+    font-size: 14px;
+    line-height: 16.59px;
+    color: var(--gray48)
+}
+
+.card-week-perceivedtemp {
+    color: var(--grayD3);
+}
+
+.card-week-temperature {
+    width: 85%;
+    padding-left: 14%;
+}
+
+.card-week-temp {
+    margin-right: 14%;
+}

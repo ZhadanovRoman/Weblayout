@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
+    
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/media-laptop.css">
+    <link rel="stylesheet" type="text/css" href="./styles/media-mobile.css">
+    <title>Forecast</title>
+</head>
+
+<body>
+    <main class="main-container">
+        <section class="sideP">
+            <div class="sideP-container">
+                <button class="sideP-btn" tabindex="1">Поиск города</button>
+                <img class="sideP-precipitation-img" src="./img/snow.svg" alt="snow">
+                
+                <div class="sideP-temperature">
+                    <span class="sideP-temperature-num">1</span>
+                    <span class="sideP-temperature-celsius">°C</span>
+                </div>
+                <h2 class="sideP-precipitation-text">Снег</h2>
+                <p class="sideP-temperature-feel">Ощущается как
+                    <span class="temperature-feel-num">-3</span>
+                    <span class="temperature-feel-celsius">°C</span>
+                </p>
+                <div class="sideP-day-date">
+                    <span class="sideP-day">Сегодня</span>
+                    <div class="sideP-date">
+                        <span class="sideP-date-week">Вс,</span>
+                        <span class="sideP-date-num">13</span>
+                        <span class="sideP-date-month">мар</span>
+                    </div>
+                </div>
+                <div class="sideP-location">
+                    <img class="sideP-location-img" src="./img/location-on.svg" alt="location picture">
+                    <span class="sideP-location-city">Москва</span>
+                </div>
+            </div>
+
+        </section>
+        <section class="central-block">
+
+            <div class="forecast-container">
+                <div class="forecast-nav">
+                    <h3 class="forecast-nav-title title">Прогноз</h3>
+                    <span class="forecast-by-week forecast-by-week__before">на неделю</span>
+                    <span class="forecast-by-hour">почасовой</span>
+                </div>
+
+                <div class="forecast-cards">
+                    <span class="cards-left-btn" tabindex="7"><svg width="38" height="38" viewBox="0 0 38 38"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="19" cy="19" r="19" fill="white" />
+                            <path d="M15 13.5L24.1265 19.1497C24.758 19.5407 24.758 20.4593 24.1265 20.8503L15 26.5"
+                                stroke="#ACACAC" stroke-width="3" />
+                        </svg></span>
+
+                    <div class="forecast-cards-hour">
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">15:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">16:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">17:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">18:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">19:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">20:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+                         
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">21:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">22:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">23:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">24:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">01:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+
+                        <div class="forecast-card-hour">
+                            <span class="card-hour-time">02:00</span>
+                            <span class="card-hour-temperature">10°C</span>
+                        </div>
+
+                    </div>
+
+                    <div class="forecast-cards-week">
+
+                        <div class="forecast-card-week">
+                            <div class="card-week-date">
+                                <span class="card-week-day">Завтра</span>
+                                <span class="card-week-number"></span>
+                                <span class="card-week-month"></span>
+                            </div>
+                            <div class="card-week-temperature">
+                                <span class="card-week-temp">10°C</span>
+                                <span class="card-week-perceivedtemp">4°C</span>
+                            </div>
+                        </div>
+
+                        <div class="forecast-card-week">
+                            <div class="card-week-date">
+                                <span class="card-week-day">Пн</span>
+                                <span class="card-week-number">15</span>
+                                <span class="card-week-month">Мар</span>
+                            </div>
+                            <div class="card-week-temperature">
+                                <span class="card-week-temp">10°C</span>
+                                <span class="card-week-perceivedtemp">4°C</span>
+                            </div>
+                        </div>
+
+                        <div class="forecast-card-week">
+                            <div class="card-week-date">
+                                <span class="card-week-day">Вт</span>
+                                <span class="card-week-number">16</span>
+                                <span class="card-week-month">Мар</span>
+                            </div>
+                            <div class="card-week-temperature">
+                                <span class="card-week-temp">10°C</span>
+                                <span class="card-week-perceivedtemp">4°C</span>
+                            </div>
+                        </div>
+
+                        <div class="forecast-card-week">
+                            <div class="card-week-date">
+                                <span class="card-week-day">Ср</span>
+                                <span class="card-week-number">17</span>
+                                <span class="card-week-month">Мар</span>
+                            </div>
+                            <div class="card-week-temperature">
+                                <span class="card-week-temp">10°C</span>
+                                <span class="card-week-perceivedtemp">4°C</span>
+                            </div>
+                        </div>
+
+                        <div class="forecast-card-week">
+                            <div class="card-week-date">
+                                <span class="card-week-day">Чт</span>
+                                <span class="card-week-number">18</span>
+                                <span class="card-week-month">Мар</span>
+                            </div>
+                            <div class="card-week-temperature">
+                                <span class="card-week-temp">10°C</span>
+                                <span class="card-week-perceivedtemp">4°C</span>
+                            </div>
+                        </div>
+
+                        <div class="forecast-card-week">
+                            <div class="card-week-date">
+                                <span class="card-week-day">Пт</span>
+                                <span class="card-week-number">19</span>
+                                <span class="card-week-month">Мар</span>
+                            </div>
+                            <div class="card-week-temperature">
+                                <span class="card-week-temp">10°C</span>
+                                <span class="card-week-perceivedtemp">4°C</span>
+                            </div>
+                        </div>
+
+                        <div class="forecast-card-week">
+                            <div class="card-week-date">
+                                <span class="card-week-day">Сб</span>
+                                <span class="card-week-number">20</span>
+                                <span class="card-week-month">Мар</span>
+                            </div>
+                            <div class="card-week-temperature">
+                                <span class="card-week-temp">10°C</span>
+                                <span class="card-week-perceivedtemp">4°C</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <span class="cards-right-btn" tabindex="8"><svg width="38" height="38" viewBox="0 0 38 38"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="19" cy="19" r="19" fill="white" />
+                            <path d="M15 13.5L24.1265 19.1497C24.758 19.5407 24.758 20.4593 24.1265 20.8503L15 26.5"
+                                stroke="#ACACAC" stroke-width="3" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <div class="detail">
+                <h3 class="detail-title title">Подробно на сегодня</h3>
+                <div class="detail-first-row">
+                    <div class="detail-wind-block">
+                        <h4 class="detail-block-title first-row-title">Скорость ветра</h4>
+                        <div class="detail-block-data">
+                            <span class="block-data-number">7</span>
+                            <span class="block-data-text">м/с</span>
+                        </div>
+                        <div class="block-wind-direction">
+                            <img src="./img/directionWind.svg" alt="direction of wind" />
+                            <span class="wind-direction-span">СЗ</span>
+                        </div>
+                    </div>
+                    <div class="detail-humidity-block">
+                        <h4 class="detail-block-title first-row-title">Влажность</h4>
+                        <div class="detail-block-data">
+                            <span class="block-data-number">84</span>
+                            <span class="block-data-text">%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-second-row">
+                    <div class="detail-visibility-block">
+                        <h4 class="detail-block-title second-row-title">Видимость</h4>
+                        <div class="detail-block-data">
+                            <span class="block-data-number">6.2</span>
+                            <span class="block-data-text">км</span>
+                        </div>
+                    </div>
+                    <div class="detail-pressure-block">
+                        <h4 class="detail-block-title second-row-title">Давление</h4>
+                        <div class="detail-block-data">
+                            <span class="block-data-number">742</span>
+                            <span class="block-data-text data-text-pressure">мм рт.ст.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/forecast.js"></script>
+</body>
+
+</html>
