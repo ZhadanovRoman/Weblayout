@@ -1,5 +1,10 @@
 # Weblayout
 Работы по адаптивной верстке
+_____
+Адаптивная-резиновая верстка, без сборщиков и препроцессоров.
+"weatherApp"
+<img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/desktop.bmp"> <img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/adaptive.bmp">
+
 ____
 
 Работающий Landing, адаптив Bootstrap с формой обратной связи,прикрутка яндекс карт, папка Landing_ProStudio, ссылка -> https://prostudionail.tmweb.ru/
