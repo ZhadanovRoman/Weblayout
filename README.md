@@ -3,6 +3,7 @@
 _____
 Адаптивная-резиновая верстка, без сборщиков и препроцессоров.
 "weatherApp"
+
 <img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/desktop.bmp"> <img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/adaptive.bmp">
 
 ____
