@@ -1,0 +1,19 @@
+- var aboutCompany = ['Партнёрская программа','Вакансии'];
+- var menu = ['Расчёт стоимости','Услуги','Виджеты','Интеграции','Наши клиенты']
+- var linksF = ['Кейсы','Благодарственные письма','Сертификаты','Блог на Youtube','Вопрос / Ответ']
+mixin footer(props)
+	footer.footer&attributes(attributes)(data-component='footer')
+		ul.footer__about-list О компании
+			each item in aboutCompany
+				li!= item
+		ul.footer__menu-list Меню
+			each item in menu
+				li!= item
+		ul.footer__links null
+			each item in linksF
+				li!= item
+		.footer__contacts Контакты
+			+contacts()
+			p Москва, Путевой проезд 3с1, к 902
+			span ©WELBEX 2022. Все права защищены.<br>
+			a(href='').footer__confidential-link Политика конфиденциальности

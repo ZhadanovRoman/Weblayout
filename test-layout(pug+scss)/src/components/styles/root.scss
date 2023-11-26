@@ -1,0 +1,20 @@
+$blackBG: #0E1014;
+$light-text: #E4E5EA;
+$dark-gray: #656566;
+$lighth-blue: #4077F3;
+$fontW500: 500;
+
+@mixin headerIndexFont {
+    text-decoration: none;
+    color: $light-text;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: $fontW500;
+}
+
+@mixin inter18 {
+    color: $light-text;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: $fontW500;
+}
