@@ -1,0 +1,8 @@
+mixin contacts(props)
+	.contacts&attributes(attributes)(data-component='contacts')
+		.contacts__links
+			a(href="") +7 555 555-55-55
+			.contacts__messengers
+				+svg('telegram')
+				+svg('phone')
+				+svg('whatsApp')
