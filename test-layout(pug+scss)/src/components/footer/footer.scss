@@ -1,0 +1,137 @@
+@import '../styles/root.scss';
+
+.footer {
+	$root: &;
+
+	display: flex;
+	height: max-content;
+	padding-bottom: 20px;
+	color: $dark-gray;
+	font-family: 'Inter';
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.7px;
+	text-transform: uppercase;
+	ul {
+		width: 25%;
+		
+		li {
+			margin-bottom: 10px;
+			color: $light-text;
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: none;
+		}
+
+		li:first-child {
+			margin-top: 20px;
+		}
+	}
+	ul:nth-child(2){
+		width: 17%;
+	}
+	&__links {
+		color: transparent !important;
+		
+	}
+
+	&__contacts {
+		width: max-content;
+margin-left: auto;
+		div {
+			width: 100%;
+			flex-direction: column;
+			align-items: flex-end;
+			
+			div {
+				a {
+					margin-right: 0;
+					margin: 20px 0;
+				}
+
+				div {
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-end;
+					margin-bottom: 20px;
+					svg:not(:last-child) {
+						margin-right: 10px !important;
+					}
+				}
+
+			}
+		}
+	}
+
+	&__contacts {
+		text-align: right;
+		p{
+			margin-bottom: 70px;
+			color: $light-text;
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: none;
+		}
+		
+		span {
+		
+            color: $light-text;
+			font-family: 'Montserrat';
+			font-size: 12px;
+			font-weight: 400;
+			text-transform: none;
+		}
+		
+	}
+	&__confidential-link{
+		
+		text-decoration: underline;
+		color: $light-text;
+		font-family: 'Montserrat';
+		font-size: 12px;
+		font-weight: 400;
+		text-transform: none;
+	}
+
+	@media (max-width: 320px) {
+		padding-top: 45px;
+		padding-bottom: 60px;
+		flex-wrap: wrap;
+		font-size: 12px;
+		ul:nth-child(2),
+		ul:nth-child(3){
+			width: 50%;
+		}
+		ul:nth-child(2){
+			padding-right: 10%;
+		}
+		ul:first-child{
+			width: 100%;
+			
+		}
+		ul{
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+			li{
+				font-size: 14px;
+			}
+		}
+
+		&__contacts{
+			margin: 0;
+			text-align: start;
+			div{
+				align-items: flex-start;
+				div{
+					div{
+						justify-content: flex-start;
+					}
+				}
+			}
+			p{
+				font-size: 14px;
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
