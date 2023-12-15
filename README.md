@@ -1,29 +1,49 @@
-# Weblayout
-Работы по адаптивной верстке
-_____
-Адаптивная-резиновая верстка, без сборщиков и препроцессоров.
-"weatherApp"
 
-<img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/desktop.bmp"> <img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/adaptive.bmp">
+### Создание компонента
 
-____
+Для генерации pug, scss, js файлов компонента необходимо ввести команду:
+```shell
+npm run component:create [название-компонента]
+```
+**[название-компонента]** - произвольное название компонента, записанное латиницей  
 
-Работающий Landing, адаптив Bootstrap с формой обратной связи,прикрутка яндекс карт, папка Landing_ProStudio, ссылка -> https://prostudionail.tmweb.ru/
+Например:
+```shell
+npm run component:create example-button
+```
+Таким образом в папке `src/components` будет создана папка `example-button` с готовыми для работы pug, scss, js файлами внутри.  
+Все созданные файлы будут добавлены в сборщик автоматически
 
-<img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio.jpg"> <img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio2.jpg"> <img style="width:300px;"  src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio3.jpg">
-<img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio6.jpg"> <img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio5.jpg"> <img style="width:300px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/prostudio4.jpg">
+> Для инициализации js-скриптов компонентов необходимо вручную добавить импорт в файл `/src/app/js/common.js` и добавить созданный компонент в объект `allComponents`
 
-______
+### Удаление компонента
+Для удаления существующего компонента необходимо ввести команду:
+```shell
+npm run component:remove [название-компонента]
+```
+**[название-компонента]** - произвольное название компонента, записанное латиницей
 
-Учебный проект-адаптив, работа с @media запросами,папка Evclid, ссылка- https://zrs-eclid.tmweb.ru/
-
-
-<img src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/zrs-evclid.bmp"> <img style="width:450px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/evclid-lay.jpg"> <img style="width:450px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/evclid-lay2.jpg"> 
-
-
-______
-
-Учебный проект-адаптив,сетка Bootstrap,папка weblayout_practic 
-
-<img style="width:450px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/layout.jpg"> <img style="width:450px;" src="https://github.com/ZhadanovRoman/Weblayout/blob/master/pictures%20weblayout/layout2.jpg">
-
+Например:
+```shell
+npm run component:remove example-button
+```
+Таким образом в папке `src/components` будет удалена папка `example-button`  
+Все pug, scss файлы, относящиеся к компоненту будут удалены из сборщика 
+### Краткое описание файловой структуры
+```
+/
+├── build_modules
+└── src
+    ├── app
+    │   ├── js
+    │   │   └── base
+    │   └── common.js
+    ├── assets
+    │   ├── fonts
+    │   ├── icons
+    │   ├── images
+    │   └── videos
+    ├── components
+    └── pages
+```
+-
