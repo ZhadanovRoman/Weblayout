@@ -1,0 +1,167 @@
+@media (max-width: 835px) and (min-width: 200px) {
+    .main-container {
+        max-width: 834px;
+        flex-direction: column;
+    }
+
+    .sideP {
+        width: 100%;
+    }
+
+    .sideP-container {
+        padding-top: 31px;
+    }
+
+    .sideP-btn {
+        width: 48%;
+        padding: 14px 3.81%;
+        margin: 0 0 9px 30px;
+    }
+     .sideP-day-date{
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+     }
+    .sideP-precipitation-img {
+        z-index: 1;
+    }
+    .sideP-temperature {
+        margin-top: -26px;
+    }
+    .sideP-location{
+        width: 90%;
+    }
+/*//BURGER MENU//*/
+.sideP-second-container{
+    padding-top: 40px;
+}
+.sideP-close-block{
+    margin-right: 50px;
+    margin-bottom: 37px;
+}
+.sideP-search-block{
+    flex-direction: column;
+    align-items: center;
+    width: 81%;
+    margin: 0;
+    padding-left: 5%;
+    margin-bottom: 439px;
+}
+.sideP-input{
+    width: inherit;
+    margin-bottom: 20px;
+}
+
+/*//ForeCAST//*/
+    .central-block {
+        width: inherit;
+        padding: 0px;
+    }
+    .forecast-container{
+        padding-left: 13.3%;
+        margin-bottom: 29px;
+    }
+    .forecast-nav {
+        width: 85%;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .forecast-by-hour{
+        margin-right: 0;
+    }
+    .forecast-nav-title {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .cards-left-btn,
+    .cards-right-btn {
+        display: none;
+    }
+
+    .forecast-cards {
+        flex-wrap: wrap;
+    }
+
+    .detail {
+        width: 100%;
+        padding: 0;
+    }
+
+    .forecast-cards {
+        width: 100%;
+        height: max-content;
+
+    }
+
+    .forecast-cards-hour,
+    .forecast-cards-week {
+        width: 80%;
+        padding-left: 3.05%;
+        flex-wrap: wrap;
+
+    }
+
+    .forecast-card-hour,
+    .forecast-card-week {
+        width: 100px;
+        height: 131px;
+        margin-bottom: 30px;
+    }
+    /*// ВКЛЮЧАЕМ НЕВИДЕМЫЕ КАРТЫ///*/
+    .forecast-card-hour:nth-child(n+7),
+    .forecast-card-week:nth-child(7){
+        display: flex;
+    }
+    
+    .forecast-card-hour:nth-child(odd),
+    .forecast-card-week:nth-child(odd) {
+        margin-right: 15%;
+    }
+
+/*///DETAIL////*/
+   .detail-title{
+    text-align: center;
+    margin-right: 0;
+   }
+   .detail-second-row,
+   .detail-first-row{
+      flex-direction: column;
+       width: 84%;
+       padding-left: 30px;
+   }
+   .detail-first-row{
+    margin-bottom: 27px;
+}
+.detail-second-row{
+    margin-bottom: 96px;
+}
+
+   .detail-wind-block,
+   .detail-humidity-block,
+   .detail-visibility-block,
+   .detail-pressure-block{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+   }
+   .detail-wind-block{
+    margin-bottom: 43px;
+   }
+   .detail-visibility-block{
+    margin-bottom: 27px;
+   }
+
+}
+@media (max-width: 835px) and (min-width: 600px) {
+    .forecast-card-hour:nth-child(even),
+    .forecast-card-week:nth-child(even){
+       margin-right: 15%;
+    }
+    .forecast-cards-week{
+        width: 95%;
+    }
+}

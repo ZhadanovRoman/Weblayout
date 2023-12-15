@@ -1,0 +1,150 @@
+@media (max-width: 1439.5px) and (min-width: 835px) {
+    .main-container {
+        max-width: 1439px;
+    }
+    .sideP {
+        width: 40.7%;
+    }
+    .sideP-container {
+        padding: 0;
+        padding-top: 53px;
+        background-image: url(../img/Cloud-background\ 1.jpg);
+    }
+    .sideP-btn {
+        width: 54.7%;
+        padding: 14px 3.81%;
+        margin: 0 0 250px 28px;
+    }
+
+    .sideP-precipitation-img {
+        margin-bottom: 235px;
+    }
+
+    .sideP-temperature {
+        margin-bottom: 17px;
+    }
+
+    .sideP-day-date {
+        margin-bottom: 25px;
+    }
+
+    .sideP-location {
+        margin-bottom: 34px;
+    }
+    .sideP-second-container{
+        padding-top: 59px;
+    }
+    .sideP-close-block {
+        margin-right: 27px;
+        margin-bottom: 37px;
+    }
+    .sideP-search-block {
+        width: 83.2%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 941px;
+    }
+    .sideP-search-block input{
+        width: inherit;
+        margin-bottom: 20px;
+    }
+    .sideP-btn-search{
+        width: 35.5%;
+    }
+
+    /*// FORECAST//*/
+    .forecast-container {
+        margin-bottom: 42px;
+        padding-top: 61px;
+    }
+
+    .forecast-nav {
+        padding-left: 10.5%;
+    }
+
+    .forecast-card-hour,
+    .forecast-card-week {
+        display: none;
+    }
+
+    .forecast-card-hour:nth-child(-n+3),
+    .forecast-card-week:nth-child(-n+3) {
+        display: flex;
+    }
+
+    
+
+    .central-block {
+        width: 59.3%;
+        padding-left: 27px;
+    }
+
+
+    .forecast-cards-hour,
+    .forecast-cards-week {
+        width: 77.2%;
+    }
+
+    .forecast-card-hour,
+    .forecast-card-week {
+        height: 128px;
+        width: 28.8%;
+
+    }
+
+    .detail-second-row,
+    .detail-first-row {
+        flex-direction: column;
+    }
+
+
+/*/DETAIL/*/
+.detail {
+    padding-left: 10.5%;
+}
+.detail-second-row,
+.detail-first-row {
+    padding-left: 14px;
+    margin: 0;
+}
+
+.detail-second-row div,
+.detail-first-row div {
+    padding: 0;
+    padding-top: 20px;
+    width: 87.2%;
+    height: max-content;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+.detail-humidity-block .detail-block-data,
+.detail-pressure-block .detail-block-data,
+.detail-visibility-block .detail-block-data,
+.detail-wind-block .detail-block-data {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2px;
+    justify-content: center;
+}
+.detail-pressure-block .detail-block-data .block-data-text,
+.detail-visibility-block .detail-block-data .block-data-text,
+.detail-humidity-block .detail-block-data .block-data-text,
+.detail-wind-block .detail-block-data .block-data-text {
+    padding-top: 25px;
+}
+.detail-wind-block .block-wind-direction{
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.detail-humidity-block .detail-block-data {
+    margin-bottom: 52px;
+}
+.detail-pressure-block .detail-block-data,
+.detail-visibility-block .detail-block-data{
+    margin-bottom: 24px;
+}
+
+
+}

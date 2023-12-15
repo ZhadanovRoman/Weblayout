@@ -1,0 +1,77 @@
+@import '../styles/root.scss';
+
+.header {
+	$root: &;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&__box {
+		display: flex;
+	}
+
+	&__logo-block {
+		display: flex;
+		flex-direction: column;
+		margin-right: 27px;
+
+		svg {
+			width: 140px;
+			height: 27px;
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+
+		span {
+			width: 165px;
+			color: grey;
+			font-family: 'Montserrat';
+			font-size: 10px;
+			font-weight: 300;
+			line-height: normal;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		flex-wrap: wrap;
+		
+		a {
+			@include headerIndexFont();
+			cursor: pointer;
+		}
+
+		a:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+
+	@media (max-width: 320px) {
+
+		&__logo-block {
+			display: none;
+		}
+
+		.contacts {
+			display: none;
+		}
+
+		&__menu {
+			width: 100%;
+			padding-top: 20px;
+			flex-wrap: wrap;
+
+			a:last-child {
+				display: none;
+			}
+
+			a {
+				font-size: 12px;
+				text-transform: uppercase;
+				margin-right: 16px !important;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
