@@ -1,0 +1,32 @@
+.header {
+	$root: &;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+	background-color: $white;
+	font-family: 'Proxima Nova Condensed Bold';
+	svg {
+		width: 125px;
+		height: 25px;
+
+	}
+
+	&__menu {
+		display: flex;
+         ul{
+			display: flex;
+			li {
+				color: $text-black;
+				font-size: 18px;
+				line-height: 20px;
+			}
+			li:not(:last-child){
+				margin-right: 20px;
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,132 @@
+.map {
+	$root: &;
+	height: 775px;
+	margin-bottom: 100px;
+	background-color: $white;
+	background-image: url('/src/assets/icons/mapAll.png');
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+	background-position-x: center;
+	color: $text-black;
+	font-family: 'Proxima Nova Condensed Bold';
+	&.mapAll{
+		background-image: url('/src/assets/icons/mapAll.png');
+	}
+	&.mapMSC{
+		background-image: url('/src/assets/icons/mapMSC.png');
+	}
+	&.mapCenter{
+		background-image: url('/src/assets/icons/mapCenter.png');
+	}
+	&.mapNord-West{
+		background-image: url('/src/assets/icons/mapNord-West.png');
+	}
+	&.mapSouth{
+		background-image: url('/src/assets/icons/mapSouth.png');
+	}
+	&.mapVolga{
+		background-image: url('/src/assets/icons/mapVolga.png');
+	}
+	&.mapUral{
+		background-image: url('/src/assets/icons/mapUral.png');
+	}
+	&.mapSiberia{
+		background-image: url('/src/assets/icons/mapSiberia.png');
+	}
+	&.mapEast{
+		background-image: url('/src/assets/icons/mapEast.png');
+	}
+	&__header-menu {
+		display: flex;
+		height: max-content;
+		align-items: center;
+		font-weight: 600;
+		margin-bottom: 20px;
+		box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.06);
+
+		svg {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	&__nav-menu {
+		display: flex;
+		margin-left: auto;
+
+		li {
+			position: relative;
+			padding: 30px 0;
+			font-size: 18px;
+			line-height: 20px;
+			transition: all 0.3s ease-in-out;
+		}
+
+		li:active::after {
+			width: 100%;
+			transition: all 0.2s ease-in-out;
+		}
+
+		li:active {
+			color: $cherry;
+		}
+
+		li:hover {
+			color: $cherry;
+		}
+
+		li::after {
+			position: absolute;
+			content: '';
+			width: 0;
+			height: 3px;
+			background-color: $cherry;
+			bottom: 0;
+			left: 0;
+
+		}
+
+		li:not(:last-child) {
+			margin-right: 30px;
+		}
+
+
+	}
+
+	&__select {
+		font-size: 24px;
+		line-height: 100%;
+		margin-right: 16px;
+	}
+
+	&__detail-nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 69px;
+		background-color: $white;
+		box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.06);
+		opacity: 0;
+		transition: all 0.4s ease-in-out;
+	}
+
+	&__detail-item {
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	&__detail-item:first-child {
+		display: none;
+	}
+
+	&__mini-item {
+		font-weight: 400;
+	}
+}
+
+.arrowRotate {
+	transform: rotate(180deg);
+}
+
+.deteilNavVisiblity {
+	opacity: 1;
+}

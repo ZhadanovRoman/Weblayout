@@ -1,0 +1,15 @@
+- var numbers = [{num:'> 30 лет',descr: 'на IT-рынке'},{num:'4600',descr: 'сотрудников в России'},{num:'25',descr: 'городов России'},{num:'2000+',descr: 'разработчиков'},{ num:'3000+',descr: 'сотрудников ежегодно<br> проходят оценку и обучение'}]
+
+
+mixin about(props)
+	section.about&attributes(attributes)(data-component='about')(class="container")
+		.about__block
+			p.about__text <span>Softline</span> - ведущий поставщик IT-решений и сервисов.* Мы предлагаем комплексные IT-решения, облака, программное и аппаратное обеспечение, решения по цифровой трансформации и кибербезопасности, а также широкий спектр IT-услуг.
+		.about__numbers
+			each item in numbers
+				.about__numbers-block
+					span.about__span-numb!= item.num
+					span.about__span-text!= item.descr
+
+
+		

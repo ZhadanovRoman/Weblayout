@@ -1,0 +1,102 @@
+@import '../src/components/gallery/gallery';
+@font-face {
+    font-family: 'Proxima Nova Condensed';
+    src: url('/src/assets/fonts/ProximaNovaCond-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Condensed Bold';
+    src: url('/src/assets/fonts/ProximaNovaCond-Bold.woff2') format('woff2');
+}
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import '../src/components/styles/mixins.scss';
+@import '../src/components/styles/roots.scss';
+@import '../src/components/about/about';
+@import '../src/components/corporate-life/corporate-life';
+@import '../src/components/compensation/compensation';
+@import '../src/components/direction/direction';
+@import '../src/components/mission/mission';
+@import '../src/components/map/map';
+@import '../src/components/hero/hero';
+@import '../src/components/main/main';
+@import '../src/components/header/header';
+@import '../src/components/gallery/gallery';
+
+
+html {
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    background-color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    padding: 0;
+    margin: 0;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: none;
+    background: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    -webkit-appearance: none;
+    color: inherit;
+
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+.container {
+    padding-left: 70px;
+    padding-right: 70px;
+}

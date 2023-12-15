@@ -1,0 +1,21 @@
+- var firstBlockSvg = [{pic:'dms',dscr:'ДМС'},{pic:'birthDay',dscr:'Выходной <br>в день рождения'},
+- {pic:'mobile-connection',dscr:'mobile-connection'},{pic:'sport',dscr:'Корпоративные скидки на спорт'},
+- {pic:'LTI',dscr:'LTI'}]
+- var secondBlockSvg = [{pic:'technica',dscr:'Оргтехники'},{pic:'dms',dscr:'ДМС'},{pic:'ipoteca',dscr:'Ипотеки'}]
+
+mixin compensation(props)
+	section.compensation&attributes(attributes)(data-component='compensation')(class="container")
+		.compensation__block
+			h2.compensation__title Компенсационный пакет
+			.compensation__first-block
+				each item in firstBlockSvg
+					.compensation__first-item
+						+svg(item.pic)
+						span!= item.dscr
+			.compensation__second-block
+				h3 Программа дополнительной мотивации<br> <span>доплата 12% от суммы</span>
+				.compensation__second-box
+					each i in secondBlockSvg
+						.compensation__second-item
+							+svg(i.pic)
+							span!= i.dscr

@@ -1,0 +1,74 @@
+.about {
+	$root: &;
+	padding-top: 100px;
+	background-color: $white;
+	font-family: 'Proxima Nova Condensed Bold';
+
+	&__block {
+		padding: 100px 0;
+		margin-bottom: 100px;
+		background-color: $white;
+		box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.08);
+
+		p {
+			width: 80%;
+			margin: 0 auto;
+			color: $text-black;
+			font-size: 32px;
+			font-weight: 600;
+			line-height: 120%;
+			text-align: center;
+
+			span {
+				color: $bardo;
+			}
+
+
+		}
+	}
+
+	&__numbers {
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 82%;
+		background-color: $white;
+
+	}
+
+	&__span-numb {
+		font-size: 80px;
+		color: $cherry;
+		line-height: 80%;
+	}
+
+	&__span-text {
+		font-size: 18px;
+		color: $text-black;
+		font-family: 'Proxima Nova Condensed';
+		line-height: 150%;
+	}
+
+	&__span-text:last-child {
+		line-height: 1.2;
+	}
+
+	&__numbers-block {
+		display: flex;
+		flex-direction: column;
+		width: max-content;
+		margin-right: 180px;
+		background-color: $white;
+		margin-bottom: 100px;
+	}
+
+	&__numbers-block:nth-child(3) {
+		margin: 0;
+	}
+
+	&__numbers-block:last-child {
+		width: 30%;
+		margin: 0;
+	}
+}

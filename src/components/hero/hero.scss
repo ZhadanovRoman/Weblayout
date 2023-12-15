@@ -1,0 +1,25 @@
+
+.hero {
+	$root: &;
+    padding: 158px 0;
+	background-image: url('/src/assets/icons/bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__title{
+		font-family: "Proxima Nova Condensed Bold";
+		width: 65%;
+		color: $text-black;
+		font-size: 56px;
+		margin-bottom: 60px;
+		line-height: 1;
+	}
+
+	&__button{
+		
+		font-size: 18px;
+		padding: 18px 28px;
+		border-radius: 8px;
+		color: $white;
+		background-color: $bardo;
+	}
+}

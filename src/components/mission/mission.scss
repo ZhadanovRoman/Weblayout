@@ -1,0 +1,57 @@
+.mission {
+	$root: &;
+	padding: 140px 0;
+	margin-bottom: 100px;
+	position: relative;
+	color: $white;
+	font-family: 'Proxima Nova Condensed Bold';
+	z-index: 100;
+	overflow: hidden;
+
+	::after {
+		position: absolute;
+		content: '';
+		background-color: $cherry;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0.7;
+		z-index: -2;
+	}
+
+	&__left-pattern {
+		position: absolute;
+		width: 24%;
+		height: 80%;
+		top: 47px;
+		left: 0;
+		z-index: -1;
+	}
+
+	&__right-pattern {
+		position: absolute;
+		width: 24%;
+		height: 80%;
+		top: 47px;
+		right: -7px;
+		transform: rotate(180deg);
+		z-index: -1;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 56px;
+		line-height: 100%;
+		margin-bottom: 40px;
+
+	}
+
+	&__descr {
+		text-align: center;
+		font-family: 'Proxima Nova Condensed';
+		font-size: 32px;
+		line-height: 1.5;
+		z-index: 9999;
+	}
+}

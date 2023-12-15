@@ -1,0 +1,28 @@
+include ../src/components/gallery/gallery
+include ../src/components/about/about
+include ../src/components/corporate-life/corporate-life
+include ../src/components/compensation/compensation
+include ../src/components/direction/direction
+include ../src/components/mission/mission
+include ../src/components/map/map
+include ../src/components/hero/hero
+include ../src/components/main/main
+include ../src/components/header/header
+
+
+
+mixin svg(id)
+    svg(focusable = 'false')&attributes(attributes)
+        use(xlink:href=`#${id}`)
+
+
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Peach
+        
+    body
+        block body
