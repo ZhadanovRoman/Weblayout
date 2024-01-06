@@ -1,9 +1,10 @@
 - var headerMenu = ['Облачные решения','Кибербезопасность','Импортозамещение','Цифровая трансформация']
 
 mixin header(props)
-	header.header&attributes(attributes )(data-component='header')(class="container")
+	header.header&attributes(attributes )(data-component='header')(class="container-full")
 		+svg('logo').header__logo
 		nav.header__menu
 			ul
 				each item in headerMenu
-					li!= item 
+					li
+						a(href='#')!= item 

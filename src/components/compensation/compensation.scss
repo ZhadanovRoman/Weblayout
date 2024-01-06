@@ -6,7 +6,8 @@
 	box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
 	font-family: 'Proxima Nova Condensed Bold';
 	color: $text-black;
-    margin-bottom: 100px;
+	margin-bottom: 100px;
+
 	&__title {
 		font-size: 56px;
 		text-align: center;
@@ -69,5 +70,64 @@
 		width: 110px;
 		height: 110px;
 		margin-bottom: 10px;
+	}
+
+	@media (max-width: 320px) {
+		padding-top: 24px;
+		padding-bottom: 0;
+		margin-bottom: 50px;
+
+		&__title {
+			font-size: 27px;
+			line-height: 100%;
+			white-space: nowrap;
+			margin-bottom: 40px;
+		}
+
+		&__first-block {
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-bottom: 0;
+		}
+
+		&__first-item,
+		&__second-item {
+			width: 45%;
+			margin-bottom: 25px;
+
+			svg {
+				width: 80px;
+				height: 80px;
+			}
+
+			span {
+				font-size: 16px;
+			}
+		}
+
+		&__first-block::after {
+			bottom: 0;
+			width: 96%;
+		}
+
+		&__second-block {
+			padding-top: 24px;
+		}
+
+		&__second-block {
+			h3 {
+				font-size: 22px;
+				margin-bottom: 25px;
+			}
+		}
+
+		&__second-box {
+			flex-wrap: wrap;
+		}
+
+		&__second-item {
+			width: 38%;
+
+		}
 	}
 }

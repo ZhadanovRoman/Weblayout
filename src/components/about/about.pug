@@ -2,10 +2,10 @@
 
 
 mixin about(props)
-	section.about&attributes(attributes)(data-component='about')(class="container")
+	section.about&attributes(attributes)(data-component='about')
 		.about__block
-			p.about__text <span>Softline</span> - ведущий поставщик IT-решений и сервисов.* Мы предлагаем комплексные IT-решения, облака, программное и аппаратное обеспечение, решения по цифровой трансформации и кибербезопасности, а также широкий спектр IT-услуг.
-		.about__numbers
+			p.about__text <span>Softline</span> - ведущий поставщик IT-решений и сервисов.*Мы предлагаем комплексные IT-решения, облака, программное и аппаратное обеспечение, решения по цифровой трансформации и кибербезопасности, а также широкий спектр IT-услуг.
+		.about__numbers(class="container")
 			each item in numbers
 				.about__numbers-block
 					span.about__span-numb!= item.num

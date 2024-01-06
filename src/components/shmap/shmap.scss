@@ -1,0 +1,52 @@
+.shmap {
+	$root: &;
+
+	height: 674px;
+	width: 100%;
+	background-image: url('/src/assets/icons/mapAll.png');
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+	background-position-x: center;
+	margin-bottom: 100px;
+	z-index: -1;
+    
+	&.mapAll{
+		background-image: url('/src/assets/icons/mapAll.png');
+	}
+	&.mapMSC{
+		background-image: url('/src/assets/icons/mapMSC.png');
+	}
+	&.mapCenter{
+		background-image: url('/src/assets/icons/mapCenter.png');
+	}
+	&.mapNord-West{
+		background-image: url('/src/assets/icons/mapNord-West.png');
+	}
+	&.mapSouth{
+		background-image: url('/src/assets/icons/mapSouth.png');
+	}
+	&.mapVolga{
+		background-image: url('/src/assets/icons/mapVolga.png');
+	}
+	&.mapUral{
+		background-image: url('/src/assets/icons/mapUral.png');
+	}
+	&.mapSiberia{
+		background-image: url('/src/assets/icons/mapSiberia.png');
+	}
+	&.mapEast{
+		background-image: url('/src/assets/icons/mapEast.png');
+	}
+	@media (max-width: 320px) {
+		height: 395px;
+		margin-bottom: 20px;
+		background-size: 300%;
+		background-position-y: top;
+		background-position-x: left;
+		
+	}
+}
+
+.shmap-visibility{
+	opacity: 0.3;
+}
