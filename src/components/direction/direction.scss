@@ -1,7 +1,8 @@
 .direction {
 	$root: &;
 	font-family: 'Proxima Nova Condensed Bold';
-    margin-bottom: 100px;
+	margin-bottom: 100px;
+
 	&__title {
 		text-align: center;
 		color: $text-black;
@@ -15,7 +16,7 @@
 		justify-content: space-between;
 	}
 
-	&__item{
+	&__item {
 		position: relative;
 		width: 49%;
 		height: 260px;
@@ -26,42 +27,51 @@
 		overflow: hidden;
 		color: $white;
 		z-index: 1;
-       // transition: all 0.5s ease-in-out;
-	
-		h3{
+		// transition: all 0.5s ease-in-out;
+
+		h3 {
 			position: absolute;
 			font-size: 24px;
 			bottom: 28px;
 			left: 20px;
-		    
+
 		}
-		p{  
+
+		p {
 			position: absolute;
 			width: 80%;
-			font-family:'Proxima Nova Condensed' ;
+			font-family: 'Proxima Nova Condensed';
 			font-size: 17px;
 			max-height: 0;
 			left: 20px;
 			bottom: -100px;
 		}
 	}
-	&__item:hover{
-		
-		h3{
+
+	&__accordArrow{
+		visibility: hidden;
+	}
+
+	&__item:hover {
+
+		h3 {
 			bottom: 208px;
 		}
-		p{
+
+		p {
 			bottom: 200px;
 		}
 	}
-	&__item:hover::after{
+
+	&__item:hover::after {
 		bottom: 0px;
 	}
 
-	&__item:first-child{
+	&__item:first-child {
 		background-image: url('/src/assets/icons/direc1.png');
 	}
-	&__item::after{
+
+	&__item::after {
 		position: absolute;
 		content: '';
 		width: 100%;
@@ -70,21 +80,97 @@
 		left: 0;
 		background-color: $bgDirect;
 		opacity: 0.6;
-        z-index: -1;
+		z-index: -1;
 	}
-	&__item:nth-child(2){
+
+	&__item:nth-child(2) {
 		background-image: url('/src/assets/icons/direc2.png');
 	}
-	&__item:nth-child(3){
+
+	&__item:nth-child(3) {
 		background-image: url('/src/assets/icons/direc3.png');
 	}
-	&__item:nth-child(4){
+
+	&__item:nth-child(4) {
 		background-image: url('/src/assets/icons/direc4.png');
 	}
-	&__item:nth-child(5){
+
+	&__item:nth-child(5) {
 		background-image: url('/src/assets/icons/direc5.png');
 	}
-	&__item:nth-child(6){
+
+	&__item:nth-child(6) {
 		background-image: url('/src/assets/icons/direc6.png');
 	}
+
+	@media (max-width: 320px) {
+        
+		margin-bottom: 50px;
+
+		&__title {
+			font-size: 28px;
+		}
+
+		&__block {
+			flex-direction: column;
+		}
+
+		&__item::after {
+			bottom: 0;
+		}
+
+		&__item {
+			width: 100%;
+			height: max-content;
+			//padding: 0 10px;
+			padding: 20px 10px 10px 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-size: 200%;
+			background-position-x: center;
+         
+			h3 {
+				position: static;
+				font-size: 20px;
+				width: 85%;
+				margin-bottom: 10px;
+			}
+
+			p {
+				position: static;
+				overflow: hidden;
+				transition: .5s ease-in-out;
+                width: 100%;
+			}
+		}
+
+		&__item:nth-child(5),
+		&__item:nth-child(6) {
+			padding-top: 10px;
+            padding-bottom: 0;
+			h3 {
+				margin-bottom: 10px;
+			}
+
+		}
+
+		&__h3 {
+			position: relative;
+		}
+
+		&__accordArrow {
+			position: absolute;
+			top: 15px;
+			right: 0;
+			visibility: visible;
+			width: 36px;
+			height: 36px;
+		}
+
+	}
+}
+
+.paragraph-mrgn {
+	margin-bottom: 30px;
 }

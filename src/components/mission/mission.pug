@@ -1,7 +1,9 @@
 mixin mission(props)
 	section.mission&attributes(attributes)(data-component='mission')
-		+svg('pattern')(class="mission__left-pattern")
+		+svg('Group-pattern-left')(class="mission__left-pattern")
+		+svg('Group-greyPattern-left')(class="mission__left-pattern-grey")
 		.mission__block(class="container")
 			h2.mission__title Миссия Softline
-			p.mission__descr Мы помогаем организациям трансформироваться, работать эффективно и безопасно <br>в условиях цифровой экономики.
-		+svg('pattern')(class="mission__right-pattern")
+			p.mission__descr Мы помогаем организациям трансформироваться, работать эффективно и безопасно в условиях цифровой экономики.
+		+svg('Group_pattern_right')(class="mission__right-pattern")
+		+svg('Group_greyPattern_right')(class="mission__right-pattern-grey")

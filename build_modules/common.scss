@@ -1,4 +1,4 @@
-@import '../src/components/gallery/gallery';
+
 @font-face {
     font-family: 'Proxima Nova Condensed';
     src: url('/src/assets/fonts/ProximaNovaCond-Regular.woff2') format('woff2');
@@ -8,12 +8,13 @@
     font-family: 'Proxima Nova Condensed Bold';
     src: url('/src/assets/fonts/ProximaNovaCond-Bold.woff2') format('woff2');
 }
+@import '../src/components/shmap/shmap';
+@import '../src/components/gallery/gallery';
 @import 'swiper/css';
 @import 'swiper/css/pagination';
 @import '../src/components/styles/mixins.scss';
 @import '../src/components/styles/roots.scss';
 @import '../src/components/about/about';
-@import '../src/components/corporate-life/corporate-life';
 @import '../src/components/compensation/compensation';
 @import '../src/components/direction/direction';
 @import '../src/components/mission/mission';
@@ -97,6 +98,22 @@ button {
 }
 
 .container {
+  
     padding-left: 70px;
     padding-right: 70px;
+}
+
+.container-full{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    body{
+        padding: 0 15px;
+    }
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    } 
 }

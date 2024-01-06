@@ -1,5 +1,5 @@
 import Compensation from '../../components/compensation/compensation';
-import CorporateLife from '../../components/corporate-life/corporate-life';
+
 import Direction from '../../components/direction/direction';
 import Header from '../../components/header/header';
 import Hero from '../../components/hero/hero';
@@ -7,7 +7,8 @@ import Main from '../../components/main/main';
 import Map from '../../components/map/map';
 import Mission from '../../components/mission/mission';
 import About from '../../components/about/about';
-import Gallery from '../../components/gallery/gallery'
+import Gallery from '../../components/gallery/gallery';
+import Shmap from '../../components/shmap/shmap';
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 
@@ -29,10 +30,10 @@ const swiper = new Swiper('.swiper',{
   });
 
 const allComponents = {
+    'shmap': Shmap,
     'gallery': Gallery,
     'about': About,
     'compensation': Compensation,
-    'corporate-life': CorporateLife,
     'direction': Direction,
     'header': Header,
     'hero': Hero,

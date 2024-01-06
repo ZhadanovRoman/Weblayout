@@ -1,11 +1,15 @@
 @import '../styles/roots.scss';
+
 :root {
-	--swiper-theme-color: #A30C33!important;
-	--swiper-pagination-bullet-inactive-opacity:.1 
-  }
+	--swiper-theme-color: #A30C33 !important;
+	--swiper-pagination-bullet-inactive-opacity: .1
+}
+
 .gallery {
 	$root: &;
-    padding-bottom: 30px;
+	padding-bottom: 30px;
+	overflow: hidden;
+
 	&__header-block {
 		display: flex;
 		justify-content: space-between;
@@ -24,9 +28,26 @@
 		svg {
 			width: 56px;
 			height: 56px;
+			cursor: pointer;
 		}
-		svg:first-child{
-		margin-right: 20px;
+
+		svg:first-child {
+			margin-right: 20px;
+		}
+	}
+
+	@media (max-width: 500px) {
+		padding-bottom: 0;
+		&__header-block {
+			margin-bottom: 15px;
+		}
+
+		&__btn-block {
+			display: none;
+		}
+
+		&__title {
+			font-size: 28px;
 		}
 	}
 }
@@ -39,7 +60,7 @@
 	width: 100%;
 	height: 835px;
 	background-image: url('/src/assets/icons/slide1.png');
-	background-repeat: no-repeat ;
+	background-repeat: no-repeat;
 	background-size: cover;
 	margin-bottom: 40px;
 }
@@ -65,23 +86,38 @@
 		transform: rotate(180deg);
 	}
 }
-.swiper-pagination{
-	
-}
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
-	
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+
 	width: 19.2%;
 	border-radius: 0;
 	border: 0;
 	margin: 0 5px;
-	
-}
-.swiper-pagination-bullet:first-child{
-	margin-left: 0!important;
+
 }
 
-.swiper-pagination-bullet:last-child{
-	margin-right: 0!important;
+.swiper-pagination-bullet:first-child {
+	margin-left: 0 !important;
 }
 
+.swiper-pagination-bullet:last-child {
+	margin-right: 0 !important;
+}
+
+@media (max-width: 500px) {
+
+	.pic5,
+	.pic4,
+	.pic3,
+	.pic2,
+	.pic1 {
+		height: 210px;
+		margin-bottom: 50px;
+	}
+
+	.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+	.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+		display: none;
+	}
+}

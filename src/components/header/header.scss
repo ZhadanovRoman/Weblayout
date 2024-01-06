@@ -16,8 +16,10 @@
 
 	&__menu {
 		display: flex;
+	
          ul{
 			display: flex;
+			flex-wrap: wrap;
 			li {
 				color: $text-black;
 				font-size: 18px;
@@ -28,5 +30,25 @@
 			}
 		}
 		
+	}
+
+	@media (max-width: 880px) {
+		padding: 16px 5px 11px 5px;
+		&__logo{
+			margin-bottom: 16px;
+		}
+		&__menu{
+          ul{
+
+			li{
+				font-size: 14px;
+				line-height: 16px;
+				margin-bottom: 5px;
+			}
+			li:not(:last-child){
+				margin-right: 8px;
+			}
+		  }
+		}
 	}
 }
