@@ -71,7 +71,7 @@ class Map extends Component {
   }
 
   accordionDetailItem = (e) => {// выпадающий список при разрешении 320 
-    if (window.innerWidth <= 320) {
+    if (window.innerWidth <= 520) {
       if (!this.countMini) {
         this.countMini = true;
         e.target.childNodes[2].style.maxHeight = e.target.childNodes[2].scrollHeight + 'px';

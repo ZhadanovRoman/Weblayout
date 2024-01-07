@@ -14,7 +14,8 @@ class Direction extends Component {
         this.paragraph = this.getElements('dscr')
         this.marker = false;
         this.dubleMarker = true;
-
+        
+        if (window.innerWidth <= 520) {
         for (let i = 0; i < this.arrow.length; i++) {
 
             this.item[i].addEventListener('click', () => {
@@ -40,6 +41,7 @@ class Direction extends Component {
                     this.marker=false;
                 }
             })
+        }
         }
         // Your code here
     }

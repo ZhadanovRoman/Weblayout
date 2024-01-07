@@ -6,18 +6,16 @@
     "scripts": {
         "dev": "webpack serve --config build_modules/webpack.js",
         "component:create": "node build_modules/scripts/componentCreate.js",
-        "component:remove": "node build_modules/scripts/componentRemove.js"
+        "component:remove": "node build_modules/scripts/componentRemove.js",
+        "build": "webpack --config build_modules/webpack.js"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/VitoBravis/internship-tasks.git"
+        "url": ""
     },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/VitoBravis/internship-tasks/issues"
-    },
-    "homepage": "https://github.com/VitoBravis/internship-tasks#readme",
+    "author": "ZhadanovRoman",
+    
+    "homepage": "",
     "eslintConfig": {
         "rules": {
             "indent": [
