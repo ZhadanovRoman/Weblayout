@@ -114,7 +114,7 @@
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	@media (max-width: 1024px) {
+	@media only screen and (max-width: 1024px) {
 		&__detail-nav {
 			padding-left: 15px;
 			padding-right: 15px;
@@ -132,7 +132,7 @@
 		}
 	}
 
-	@media (max-width: 320px) {
+	@media only screen and (max-width: 520px) {
 		padding-top: 2px;
 
 
