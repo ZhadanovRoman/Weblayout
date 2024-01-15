@@ -1,0 +1,50 @@
+- var aboutUs = ['Ткани и фурнитура', 'Оплата и доставка', 'Возврат', 'Оптовикам', 'Контакты']
+- var shopsFirstDscr = ['м. «Сокольники»', 'Сокольническая площадь, дом 9a', 'ТЦ «Престиж-М», 2 этаж, секция 231', 'Пн-Вс с 10:00 до 19:00']
+- var shopsSecondDscr = ['м. «Бутырская»','17-й проезд Марьиной рощи, дом 9а','Пн-Пт с 9:00 до 17:00']
+mixin footer(props)
+	.footer&attributes(attributes)(data-component='footer' class='padding-desctop')
+	
+		.footer__top
+			.footer__links-box
+				+svg('logo').footer__logo
+				.footer__links-block
+					a(href="#")
+						+svg('PhoneIncoming').footer__phone-link
+					a(href="#")
+						+svg('email').footer__email-link
+					a(href="#")
+						+svg('WhatsappLogo').footer__whatsApp-link
+					a(href="#")
+						+svg('InstagramLogo').footer__insta-link
+					a(href="#")
+						+svg('VK').footer__vk-link
+			.footer__internet-shop-box
+				h5.footer__internet-shop-title интернет-магазин
+				a(href="tel:+7 495 619-8235" class='footer__internet-shop-tel') +7 495 619-8235
+				a(href="#" class='footer__internet-shop-link') medstyle@medstyle.ru
+			.footer__about-us-box
+				h5.footer__about-us-title о нас
+				each i in aboutUs
+					p.footer__about-us-paragraph!=i
+			.footer__shops
+				h5.footer__shops-title магазины
+				.footer__shops-first-block
+					+svg('location')
+					.footer__shops-dscr
+						each i in shopsFirstDscr
+							p.footer__shops-paragraph!=i
+				.footer__shops-second-block
+					+svg('location')
+					.footer__shops-dscr
+						each i in shopsSecondDscr
+							p.footer__shops-paragraph!=i
+		.footer__bottom
+			.footer__bottom-block
+				p Сделано в СССР
+				p © 2013-2023
+			+svg('yasha')
+
+
+
+
+	

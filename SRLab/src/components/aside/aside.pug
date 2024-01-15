@@ -1,0 +1,56 @@
+- var sizeNum = ['40','42','44','46','48','50','52','54','56']
+- var detailClasp = [{id: 'rivet', text: 'кнопка'}, {id: 'zipper', text: 'молния'}, {id:'buttons', text: 'пуговицы' }]
+- var detailSleeve = [{id: 'short', text: 'короткий'},{id: '3/4', text: '3/4'},{id: '7/8', text: '7/8'},{id: 'long', text: 'длинный'},]
+- var subcategoriesArr = ['mужские медицинские халаты','женские медицинские халаты',',белого цвета','МЕДИЦИНСКИЕ БРЮКИ','Белые халаты медицинские мужские','Лабораторные халаты','Большие размеры','Для врачей']
+mixin aside(props)
+	.aside&attributes(attributes)(data-component='aside')
+		.aside__categories-box
+			h2.aside__title медицинские халаты
+			.aside__filter-box
+				+svg('Funnel').aside__filter-logo
+				h3.aside__fliter-title фильтры
+			.aside__gender-block
+				h5.aside__gender-title пол
+				.aside__gender-box
+					+check-box({id:'woomen', text:'женский'})
+					+check-box({id:'new', text:'новинка'})
+					+check-box({id:'men', text:'мужской'})
+			.aside__price-block
+				h5.aside__price-title цена
+				.aside__price-box
+					+range-slider()
+					span от
+					label(for='left-price-inpt').aside__lable-price
+						input(type="number",id='left-price-inpt', placeholder='1000').aside__inpt-left
+					span до
+					label(for="right-price-inpt").aside__lable-price 
+						input(type="number", id='right-price-inpt', placeholder='9999').aside__inpt-right
+			.aside__size-box
+				.aside__size-title размер
+				.aside__size-block
+					each i in sizeNum
+						.aside__size-check!=i
+			.aside__details-box
+				.aside__detail-clasp
+					h5.aside__detail-title-clasp застежка
+					each i in detailClasp
+						+check-box(i)
+				.aside__detail-sleeve
+					h5.aside__detail-title-sleeve рукав
+					each i in detailSleeve
+						+check-box(i)
+			.aside__buttons-box
+				button(class='aside__show-btn') показать
+				button(class='aside__reset-btn') сбросить
+		.aside__subcategories-box
+			.aside__subcategories-title-box
+				.aside__subcategories-title-burger
+					.aside__subcategories-burger-span
+					.aside__subcategories-burger-span
+					.aside__subcategories-burger-span
+					.aside__subcategories-burger-span
+					.aside__subcategories-burger-span
+				h3.aside__subcategories-title подкатегории
+			ul.aside__subcategories-list
+				each i in subcategoriesArr
+					li.aside__subcategories-item!=i

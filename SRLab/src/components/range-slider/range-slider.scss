@@ -1,0 +1,39 @@
+@import '/node_modules/nouislider/dist/nouislider.min.css';
+
+.range-slider {
+	$root: &;
+    width: 80%;
+	height: 1px;
+	border: none;
+	box-shadow: none;
+    margin-bottom: 20px;
+
+}
+///////////////////////////////////////////////////
+.noUi-connect{
+	background-color: $bgBlack;
+	box-shadow: none;
+	height: 1px;
+}
+
+.noUi-base{
+	height: 1px;
+	background-color: $greySlid;
+	box-shadow: none;
+}
+.noUi-handle::after,
+.noUi-handle::before{
+	display: none;
+}
+.noUi-handle{
+	border-radius: 100%;
+	height: 12px;
+	width: 12px;
+	background-color: $bgBlack;
+	box-shadow: none;
+}
+.noUi-horizontal .noUi-handle{
+	height: 12px;
+	width: 12px;
+	right: -10px;
+}

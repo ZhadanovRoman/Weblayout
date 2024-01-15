@@ -1,0 +1,57 @@
+.check-box {
+	$root: &;
+
+	position: relative;
+	padding-left: 20px;
+	margin-right: 40px;
+	
+
+	input {
+		appearance: none;
+		-webkit-appearance: none;
+	}
+
+	&__label {
+		color: $bgBlack;
+		font-family: 'CeraPro Regular';
+		font-size: 12px;
+		line-height: 18px;
+		text-transform: capitalize;
+		cursor: pointer;
+	}
+
+	&__label::before{
+		content: '';
+		display: block;
+		width: 15px;
+		height: 15px;
+		border: 1px solid $bgBlack;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+
+	&__label::after{
+		content: '';
+		display: block;
+		width: 15px;
+		height: 15px;
+		background-image: url('/src/assets/icons/check.png') ;
+		background-repeat: no-repeat;
+		
+		block-size: cover;
+		position: absolute;
+		opacity: .5;
+		left: 2px;
+		top: 5px;
+		z-index: 2;
+	}
+
+	input:checked + &__label::before{
+        background-color: $bgBlack;
+	}
+	input:checked + &__label::after{
+		opacity: 1;
+    }
+}

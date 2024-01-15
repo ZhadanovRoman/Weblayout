@@ -1,0 +1,23 @@
+include ../src/components/check-box/check-box
+include ../src/components/range-slider/range-slider
+include ../src/components/phone-link/phone-link
+include ../src/components/footer/footer
+include ../src/components/aside/aside
+include ../src/components/main/main
+include ../src/components/header/header
+
+
+mixin svg(id)
+    svg(focusable = 'false')&attributes(attributes)
+        use(xlink:href=`#${id}`)
+
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Задание 5
+        
+    body
+        block body

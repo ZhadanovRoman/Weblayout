@@ -1,0 +1,169 @@
+.aside {
+	$root: &;
+	width: 250px;
+
+
+	&__categories-box {
+		padding-top: 20px;
+
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		@include H3Title();
+		font-size: 20px;
+	}
+    &__filter-box{
+		@include H3Title();
+	}
+	
+	
+	&__details-box,
+	&__size-box,
+	&__price-block,
+	&__gender-block {
+		padding-top: 10px;
+		border-top: 1px solid $borderLine;
+	}
+
+	&__gender-box {
+		margin-bottom: 20px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__price-box {
+		margin-bottom: 20px;
+
+		span {
+			margin-right: 9px;
+		}
+	}
+
+	&__size-box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__size-block {
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	&__size-check {
+		padding: 0 4px;
+		border: 1px solid $bgBlack;
+		color: #343331;
+		font-family: 'CeraPro Regular';
+		font-size: 12px;
+		line-height: 20px;
+		margin-right: 1px;
+		cursor: pointer;
+	}
+
+	&__details-box {
+		display: flex;
+		margin-bottom: 25px;
+	}
+
+	
+	///// h5Title
+	&__size-title,
+	&__gender-title,
+	&__price-title,
+	&__detail-title-sleeve,
+	&__detail-title-clasp {
+		@include H5Title();
+	}
+
+	//////////  BTNS style
+	&__buttons-box {
+		margin-bottom: 20px;
+	}
+
+	&__reset-btn,
+	&__show-btn {
+		@include BtnGrey();
+	}
+
+	&__reset-btn {
+		background-color: $white;
+		color: $bgBlack;
+		border: 1px solid $bgBlack;
+		margin-left: 19px;
+	}
+
+	//////// for subcategories
+	&__subcategories-title {
+		color: $bgBlack;
+		font-family: 'CeraPro Medium';
+		font-size: 14px;
+		letter-spacing: 0.2px;
+		text-transform: uppercase;
+	}
+
+	&__subcategories-title-box {
+		@include H3Title();
+		color: $titleBlack;
+	}
+
+	&__subcategories-title-burger {
+		width: 24px;
+		height: 24px;
+		padding: 4px 3px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-right: 10px;
+	}
+
+	&__subcategories-list {
+		padding-top: 12px;
+		border-top: 1px solid $borderLine;
+	}
+
+	&__subcategories-burger-span {
+		width: 60%;
+		border-bottom: 1.5px solid $bgBlack;
+	}
+
+	&__subcategories-burger-span:first-child {
+		width: 75%;
+	}
+
+	&__subcategories-item {
+		padding-bottom: 12px;
+		border-bottom: 1px solid $borderLine;
+		margin-bottom: 12px;
+		font-family: 'CeraPro Regular';
+		font-size: 12px;
+		letter-spacing: 0.24px;
+		text-transform: uppercase;
+	}
+
+	///////// for range inpt
+	&__inpt-left,
+	&__inpt-right {
+		background-color: $bgBlack;
+		width: 53px;
+		height: 30px;
+		text-align: center;
+		margin-right: 9px;
+		font-family: 'CeraPro Medium';
+		font-size: 14px;
+		color: $white;
+	}
+
+	&__inpt-left::placeholder,
+	&__inpt-right::placeholder {
+		font-family: 'CeraPro Medium';
+		font-size: 14px;
+		color: $white;
+	}
+}
+
+.size-block-change {
+	color: $white;
+	background-color: $bgBlack;
+}

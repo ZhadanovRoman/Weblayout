@@ -1,0 +1,156 @@
+.main {
+	$root: &;
+	padding-top: 16px;
+	background-color: $white;
+	margin-bottom: 70px;
+	border-bottom: 1px solid $borderLine;
+    
+	
+	&__pages-link {
+		margin-bottom: 40px;
+		color: $pagesLinks;
+		font-family: 'CeraPro Regular';
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&__hero {
+		width: 70%;
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__hero-sort {
+		width: 250px;
+		margin-left: auto;
+		justify-content: flex-end;
+		@include H3Title();
+		border-bottom: 1px solid $borderLine;
+
+	}
+
+	&__block {
+		display: flex;
+	}
+
+	&__hero-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	
+
+	/*//////////////////////  items options*/
+	&__hero-item {
+		position: relative;
+		width: 23%;
+		height: 550px;
+		display: flex;
+		justify-content: center;
+		padding-top: 343px;
+		background-image: url('/src/assets/icons/1.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	&__hero-item:nth-last-child(-n+4){
+           height: 500px;
+	}
+	&__item-heart-first,
+	&__item-heart-green {
+		position: absolute;
+		width: 18%;
+		height: 9%;
+		top: 1%;
+		right: 2%;
+		opacity: 0;
+		z-index: 1;
+	}
+
+	&__item-heart-first {
+		top: 2.1%;
+		right: 3%;
+		opacity: 1;
+		z-index: 0;
+		width: 16%;
+		height: 7%;
+	}
+
+	&__item-dscr {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__item-title {
+		margin-bottom: 5px;
+		@include H4Title();
+
+	}
+
+	&__item-clothingSize,
+	&__item-article {
+		color: $greyItemText;
+		text-align: center;
+		font-family: 'MyriadPro Regular';
+		font-size: 12px;
+		line-height: 14px
+	}
+
+	&__item-clothingSize {
+		line-height: 18px;
+		margin-bottom: 5px;
+	}
+
+	&__item-price-block {
+		margin-bottom: 5px;
+		color: $titleBlack;
+		font-family: 'CeraPro Medium';
+		font-size: 15px;
+		line-height: 24px;
+
+	}
+
+	&__item-price,
+	&__item-second-price {
+		margin-right: 9px;
+	}
+
+	&__item-btn {
+		@include BtnGrey();
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+
+}
+
+.item-price-crossedOut {
+	text-decoration: line-through;
+	font-family: 'CeraPro Light';
+	font-size: 12px;
+}
+
+.item-price-color {
+	color: $itemPrice;
+}
+
+.opacity1 {
+	opacity: 1;
+}
+
+.itemBtnChange {
+	background-color: $white;
+	background-image: url('/src/assets/icons/BasketBtn.png');
+	color: $titleBlack;
+	background-position: 48% 30%;
+	background-repeat: no-repeat;
+	border-bottom: 26px;
+	align-self: center;
+	border: none;
+	font-family: 'CeraPro Medium';
+	font-size: 12px;
+	line-height: 24px;
+}

@@ -1,0 +1,4 @@
+mixin check-box(props)
+	.check-box&attributes(attributes)(data-component='check-box')
+		input(type="checkbox", id!=props.id)
+		label(for!=props.id).check-box__label!=props.text 
