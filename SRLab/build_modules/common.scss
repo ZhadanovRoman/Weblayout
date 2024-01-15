@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'CeraPro Light';
+    src: url('/src/assets/fonts/CeraPro-Light.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'CeraPro Regular';
+    src: url('/src/assets/fonts/CeraPro-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'CeraPro Medium';
+    src: url('/src/assets/fonts/CeraPro-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'MyriadPro Regular';
+    src: url('/src/assets/fonts/MyriadPro-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Cera Condensed Pro';
+    src: url('/src/assets/fonts/CeraCondensedPro-Thin.woff2') format('woff2');
+}
+@import '../src/components/styles/hide-arrow-inpt.scss';
+@import '../src/components/styles/roots.scss';
+@import '../src/components/styles/mixins.scss';
+
+@import '../src/components/range-slider/range-slider';
+@import '../src/components/phone-link/phone-link';
+@import '../src/components/footer/footer';
+@import '../src/components/aside/aside';
+@import '../src/components/main/main';
+@import '../src/components/header/header';
+@import '../src/components/check-box/check-box';
+
+html {
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    background-color: $white;
+}
+
+h1, h2, h3, h4, h5, p, a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    padding: 0;
+    margin: 0;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: none;
+    background: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    -webkit-appearance: none;
+    color: inherit;
+
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.padding-desctop{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+

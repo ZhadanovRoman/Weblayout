@@ -1,0 +1,55 @@
+@mixin CeraPro14 {
+    font-family: 'CeraPro Regular';
+    font-size: 14px;
+    line-height: 24px;
+    color: $titleBlack;
+}
+
+@mixin BtnGrey {
+    padding: 8px 15px;
+    color: $white;
+    font-family: 'CeraPro Regular';
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.39px;
+    text-transform: uppercase;
+    border: 1px solid $btnGrey;
+    background-color: $btnGrey;
+}
+
+@mixin H5Title {
+    margin-bottom: 10px;
+    color: $bgBlack;
+    font-family: 'CeraPro Regular';
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.39px;
+    text-transform: uppercase;
+}
+
+@mixin H3Title {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    margin-bottom: 17px;
+    font-family: 'CeraPro Medium';
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: $titleBlack;
+
+    svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+}
+
+@mixin H4Title {
+    font-family: 'CeraPro Regular';
+    font-size: 15px;
+    line-height: 20px;
+    color: $titleBlack;
+}
+

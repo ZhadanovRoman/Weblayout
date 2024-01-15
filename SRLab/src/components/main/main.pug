@@ -1,0 +1,12 @@
+mixin main(props)
+	.main&attributes(attributes)(data-component='main', class='container padding-desctop')
+		.main__pages-link <span>Главная</span>/<span>Интернет-магазин</span>/<span>Медицинские халаты</span>
+		.main__block
+			+aside()
+			.main__hero
+				.main__hero-sort
+					+svg('ArrowsDownUp')
+					span.main__hero-sort-btn  сортировка
+				ul.main__hero-list
+						
+						

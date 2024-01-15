@@ -1,0 +1,150 @@
+.header {
+	$root: &;
+
+	display: flex;
+	flex-direction: column;
+
+
+
+	&__delivery {
+		background-color: $grey;
+		text-align: center;
+        padding: 4px 0;
+		span {
+			@include CeraPro14();
+			color: $white;
+		}
+	}
+
+	//////////////////////////////////////////////
+
+	&__main {
+		display: flex;
+		justify-content: space-between;
+		padding: 17px 30px;
+		@include CeraPro14();
+	}
+
+	&__left-menu {
+		display: flex;
+		align-items: center;
+	}
+
+
+
+	&__burger {
+		width: 32px;
+		height: 32px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-right: 40px;
+
+		span:not(:last-child) {
+			margin-bottom: 8px;
+		}
+
+		span:nth-child(2n),
+		span:nth-child(2n+1) {
+			width: 35px;
+			border-bottom: 1px solid $titleBlack;
+
+		}
+
+		span:nth-child(2n) {
+			width: 29px;
+		}
+	}
+
+	&__location {
+		display: flex;
+		align-items: center;
+       svg{
+		margin-right: 7px;
+	}
+		span {
+			margin-right: 30px;
+		}
+	}
+
+	//////////////////////////////////////////////////
+	&__logo {
+		width: 200px;
+		height: 43px;
+	}
+
+	&__links-logo {
+		width: 32px;
+		height: 32px;
+	}
+
+
+	///////////////////////////// прячем второй компонент телефона при десктопе
+	&__second-phone {
+		display: none;
+	}
+
+	&__first-phone {
+		span {
+			font-size: 30px;
+			font-family: 'Cera Condensed Pro';
+			font-weight: 250;
+			letter-spacing: 0.36px;
+			text-transform: uppercase;
+		}
+
+		svg {
+			display: none;
+		}
+	}
+
+	/////////////////////////////////////////////////
+
+	&__right-menu {
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		width: 25%;
+	}
+
+	&__basket,
+	&__heart{
+		display: flex;
+		align-items: center;
+		margin-left: 30px;
+	}
+&__search{
+	display: flex;
+	align-items: center;
+}
+	&__search-btn,
+	&__search-input {
+		display: none;
+	}
+
+	//////////////////////////////////
+	&__bottom {
+		background-color: $bgBlack;
+		display: flex;
+		justify-content: center;
+		padding-top: 10px;
+	}
+
+	&__bottom-list {
+		display: flex;
+		margin-bottom: 15px;
+	}
+
+	&__bottom-link {
+		color: $white;
+		font-size: 12px;
+		line-height: 100%;
+		letter-spacing: 0.36px;
+		text-transform: uppercase;
+	}
+
+	&__bottom-item:not(:last-child) {
+		margin-right: 35px;
+
+	}
+}

@@ -1,0 +1,112 @@
+.footer {
+	$root: &;
+	padding-top: 70px;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		font-family: 'CeraPro Regular';
+		color: $titleBlack;
+		margin-bottom: 45px;
+	}
+
+	&__shops-first-block,
+	&__shops-second-block {
+		svg {
+			width: 32px;
+			height: 32px;
+		}
+	}
+
+	&__internet-shop-title,
+	&__about-us-title,
+	&__shops-title {
+		@include H5Title();
+		color: $titleBlack;
+		margin-bottom: 15px;
+	}
+
+
+	&__logo {
+		width: 200px;
+		height: 43px;
+		margin-bottom: 20px;
+	}
+
+	&__vk-link,
+	&__insta-link,
+	&__whatsApp-link,
+	&__email-link,
+	&__phone-link {
+		width: 32px;
+		height: 32px;
+		margin-right: 10px;
+	}
+
+	&__vk-link {
+		margin: 0;
+	}
+
+	&__internet-shop-box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__about-us-paragraph {
+		font-size: 14px;
+		line-height: 1.2;
+
+	}
+
+	&__about-us-paragraph:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	&__shops-first-block,
+	&__shops-second-block {
+		display: flex;
+
+		svg {
+			margin-right: 10px;
+		}
+	}
+
+	&__shops-first-block {
+		margin-bottom: 15px;
+	}
+
+	&__shops-dscr {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__shops-paragraph:last-child {
+		margin-top: 10px;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 20px;
+		border-top: 1px solid $borderLine;
+        margin-bottom: 60px;
+		svg {
+			width: 188px;
+			height: 18px;
+		}
+	}
+
+	&__bottom-block {
+		display: flex;
+		margin-bottom: 20px;
+		font-family: 'CeraPro Regular';
+		font-size: 12px;
+		line-height: 16px;
+		color: #B9B9B9;
+		p:first-child {
+			margin-right: 54px;
+			letter-spacing: 0.12px;
+			color:  #67696A;
+		}
+	}
+}

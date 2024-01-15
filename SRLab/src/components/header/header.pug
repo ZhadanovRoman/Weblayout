@@ -1,0 +1,33 @@
+- var headerBottomLinks = ['женская одежда', 'мужская одежда', 'обувь']
+
+mixin header(props)
+	.header&attributes(attributes)(data-component='header', class='container')
+		.header__delivery
+			span Бесплатная доставка по всей России при оплате заказа on-line на сумму от 4 000 рублей
+		.header__main
+			.header__left-menu
+				.header__burger
+					span
+					span
+					span
+					span
+				.header__location
+					+svg('location').header__links-logo
+					span Москва
+					+phone-link().header__first-phone
+			+svg('logo').header__logo
+			.header__right-menu
+				.header__search
+					input.header__search-input(type="text")//- по логике для дальнейшей эксплуатации понадобится
+					button.header__search-btn(type="submit")//- по логике для дальнейшей эксплуатации понадобится
+					+svg('search').header__links-logo
+				+phone-link().header__second-phone
+				a(href="#").header__heart
+					+svg('heart').header__links-logo
+				a(href="#").header__basket
+					+svg('basket').header__links-logo
+		.header__bottom
+			ul.header__bottom-list
+				each item in headerBottomLinks
+					li.header__bottom-item
+						a(href="#").header__bottom-link!=item 
