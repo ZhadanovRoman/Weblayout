@@ -1,6 +1,9 @@
 
-npm run component:create example-button
+# SRlab-test
+Лэндинг сверстаный на PUG, SCSS.
+Сборщик - WebPack.
+Подключен noUiSlider. Весь остальной функционал на классовом(ООП) JS.
 
-npm run component:remove example-button
+Пробная версия <a href="https://zrswptest.tmweb.ru/">zrswptest.tmweb.ru</a>
 
-### Краткое описание файловой структуры
+____
