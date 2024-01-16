@@ -6,7 +6,8 @@
     "scripts": {
         "dev": "webpack serve --config build_modules/webpack.js",
         "component:create": "node build_modules/scripts/componentCreate.js",
-        "component:remove": "node build_modules/scripts/componentRemove.js"
+        "component:remove": "node build_modules/scripts/componentRemove.js",
+        "build": "webpack --config build_modules/webpack.js"
     },
     "repository": {
         "type": "git",
