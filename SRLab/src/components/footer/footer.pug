@@ -25,7 +25,7 @@ mixin footer(props)
 			.footer__about-us-box
 				h5.footer__about-us-title о нас
 				each i in aboutUs
-					p.footer__about-us-paragraph!=i
+					a(href="#").footer__about-us-link!=i
 			.footer__shops
 				h5.footer__shops-title магазины
 				.footer__shops-first-block

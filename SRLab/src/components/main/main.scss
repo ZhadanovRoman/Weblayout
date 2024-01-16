@@ -4,8 +4,8 @@
 	background-color: $white;
 	margin-bottom: 70px;
 	border-bottom: 1px solid $borderLine;
-    
-	
+
+
 	&__pages-link {
 		margin-bottom: 40px;
 		color: $pagesLinks;
@@ -26,8 +26,12 @@
 		margin-left: auto;
 		justify-content: flex-end;
 		@include H3Title();
+		margin-bottom: 20px;
 		border-bottom: 1px solid $borderLine;
 
+		svg {
+			margin-bottom: 17px;
+		}
 	}
 
 	&__block {
@@ -40,12 +44,12 @@
 		justify-content: space-between;
 	}
 
-	
+
 
 	/*//////////////////////  items options*/
 	&__hero-item {
 		position: relative;
-		width: 23%;
+		width: 220px;
 		height: 550px;
 		display: flex;
 		justify-content: center;
@@ -54,9 +58,11 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
-	&__hero-item:nth-last-child(-n+4){
-           height: 500px;
+
+	&__hero-item:nth-last-child(-n+4) {
+		height: 500px;
 	}
+
 	&__item-heart-first,
 	&__item-heart-green {
 		position: absolute;
@@ -123,8 +129,78 @@
 		padding-right: 20px;
 	}
 
+	@media only screen and (max-width: 460px) {
+		padding-top: 0;
+        padding-bottom: 30px;
 
+		&__hero-sort-btn {
+			font-size: 10px;
+		}
 
+		&__hero-sort {
+			position: absolute;
+			top: 145px;
+			right: 5%;
+			margin: 0;
+			width: max-content;
+			border-bottom: 0;
+
+			svg {
+				margin: 0;
+			}
+		}
+
+		&__pages-link {
+			display: none;
+		}
+
+		&__block {
+			flex-direction: column;
+		}
+
+		&__hero {
+			margin-left: 0;
+			width: 100%;
+		}
+		
+		&__hero-item {
+			padding-top: 257px;
+			width: 165px;
+			height: 412px;
+		}
+
+		&__item-title{
+			font-size: 11px;
+			line-height: 15px;
+		}
+		&__item-article{
+            font-size: 9px;
+			line-height: 10px;
+		}
+		&__item-clothingSize{
+			font-size: 9px;
+			line-height: 14px;
+		}
+		&__item-price,
+		&__item-second-price{
+			line-height: 18px;
+			margin-right: 7px;
+		}
+		&__item-btn{
+			letter-spacing: 0.292px;
+			font-size: 9.75px;
+			line-height: 18px;
+		}
+
+		&__hero-item:nth-last-child(-n+4) {
+			height: 412px;
+		}
+	}
+	@media only screen and (max-width: 380px) {
+		&__hero-item{
+			width: 150px;
+		}
+	}
 }
 
 .item-price-crossedOut {
@@ -153,4 +229,9 @@
 	font-family: 'CeraPro Medium';
 	font-size: 12px;
 	line-height: 24px;
+}
+@media only screen and (max-width: 460px) {
+	.item-price-color {
+		line-height: 18px;
+	}
 }

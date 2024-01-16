@@ -104,4 +104,9 @@ button {
     padding-left: 35px;
     padding-right: 35px;
 }
-
+@media only screen and (max-width: 460px) {
+    .padding-desctop{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

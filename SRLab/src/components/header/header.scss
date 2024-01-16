@@ -116,8 +116,10 @@
 &__search{
 	display: flex;
 	align-items: center;
+	width: max-content;
+	height: max-content;
 }
-	&__search-btn,
+	
 	&__search-input {
 		display: none;
 	}
@@ -145,6 +147,58 @@
 
 	&__bottom-item:not(:last-child) {
 		margin-right: 35px;
+
+	}
+
+	@media only screen and (max-width: 460px) {
+        &__main{
+			padding: 10px 15px;
+			display: flex;
+		
+		}
+		&__right-menu{
+			width: max-content;
+		}
+		&__delivery{
+			display: none;
+		}
+
+        &__burger {
+            margin-right: 0;
+		}
+
+		&__location{
+			display: none;
+		}
+
+        &__logo{
+			width: 150px;
+			height: 32px;
+		}
+
+		&__second-phone{
+			display: flex;
+			align-items: flex-end;
+			height: max-content;
+			span{
+				display: none;
+			}
+			svg{
+				width: 24px;
+				height: 24px;
+				margin-left: 10px;
+			}
+		}
+
+        &__basket,
+		&__heart{
+			margin-left: 10px;
+		}
+
+		&__links-logo{
+			width: 24px;
+			height: 24px;
+		}
 
 	}
 }
