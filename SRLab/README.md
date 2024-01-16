@@ -1,8 +1,6 @@
-# SRlab-test
-Лэндинг сверстаный на PUG, SCSS.
-Сборщик - WebPack.
-Подключен noUiSlider. Весь остальной функционал на классовом(ООП) JS.
 
-Пробная версия <a href="https://zrswptest.tmweb.ru/">zrswptest.tmweb.ru</a>
+npm run component:create example-button
 
-____
+npm run component:remove example-button
+
+### Краткое описание файловой структуры

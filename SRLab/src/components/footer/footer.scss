@@ -1,6 +1,6 @@
 .footer {
 	$root: &;
-	padding-top: 70px;
+	padding-top: 30px;
 
 	&__top {
 		display: flex;
@@ -47,18 +47,19 @@
 		margin: 0;
 	}
 
+	&__about-us-box,
 	&__internet-shop-box {
 		display: flex;
 		flex-direction: column;
 	}
 
-	&__about-us-paragraph {
+	&__about-us-link {
 		font-size: 14px;
 		line-height: 1.2;
 
 	}
 
-	&__about-us-paragraph:not(:last-child) {
+	&__about-us-link:not(:last-child) {
 		margin-bottom: 15px;
 	}
 
@@ -89,7 +90,8 @@
 		justify-content: space-between;
 		padding-top: 20px;
 		border-top: 1px solid $borderLine;
-        margin-bottom: 60px;
+		margin-bottom: 60px;
+
 		svg {
 			width: 188px;
 			height: 18px;
@@ -103,10 +105,63 @@
 		font-size: 12px;
 		line-height: 16px;
 		color: #B9B9B9;
+
 		p:first-child {
 			margin-right: 54px;
 			letter-spacing: 0.12px;
-			color:  #67696A;
+			color: #67696A;
 		}
+	}
+
+	@media only screen and (max-width: 460px) {
+		&__logo {
+			width: 150px;
+			height: 32px;
+		}
+
+		&__top {
+			flex-direction: column;
+			margin-bottom: 0;
+		}
+
+		&__phone-link,
+		&__email-link,
+		&__insta-link {
+			display: none;
+		}
+
+		&__shops,
+		&__links-box {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__shops,
+		&__links-box,
+		&__about-us-box,
+		&__internet-shop-box {
+			align-items: center;
+			margin-bottom: 40px;
+		}
+		&__bottom,
+		&__shops-second-block,
+		&__shops-first-block {
+			flex-direction: column;
+			align-items: center;
+
+			svg {
+				margin-bottom: 10px;
+			}
+
+			p {
+				text-align: center;
+			}
+		}
+		&__bottom{
+			svg {
+				margin-bottom: 20px;
+			}
+		}
+		
 	}
 }
