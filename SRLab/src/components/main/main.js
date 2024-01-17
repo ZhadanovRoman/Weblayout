@@ -44,8 +44,8 @@ class Main extends Component {
             this.greenHeart = document.createElement('img');
             this.greenHeart.classList.add('main__item-heart-green');
             this.greenHeart.src = HeartGreen;
-            this.greenHeart.addEventListener('click', this.heartClick.bind(this))
-
+            
+            this.greenHeart.addEventListener('click', this.heartClick)
             this.item = document.createElement('li');
             this.item.classList.add('main__hero-item');
 
@@ -101,8 +101,9 @@ class Main extends Component {
 
     }
     heartClick = (e) => {
-
-        e.target.classList.toggle('opacity1')
+        console.log('yyyyyyyy')
+        e.target.parentNode.childNodes[1].classList.toggle('opacity0');
+        e.target.classList.toggle('opacity1');
     }
 
     itemBtnClick = (e) => {
