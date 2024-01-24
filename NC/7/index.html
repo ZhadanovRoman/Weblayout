@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+    <style>
+        .square {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const minSquares = 10;
+            const maxSquares = 100;
+            const numSquares = Math.floor(Math.random() * (maxSquares - minSquares + 1)) + minSquares;
+
+            const body = document.body;
+
+            for (let i = 0; i < numSquares; i++) {
+                const square = document.createElement('div');
+                square.classList.add('square');
+                square.style.backgroundColor = getRandomColor();
+                body.appendChild(square);
+            }
+        });
+    </script>
+
+</body>
+</html>

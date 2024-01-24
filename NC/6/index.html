@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="registrationForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required pattern="[A-Za-zА-Яа-яЁё]{3,30}">
+        <div class="error-message" id="nameError"></div>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required pattern="\+?[0-9]{10,15}">
+        <div class="error-message" id="phoneError"></div>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required pattern="^(?=.*[A-Z])(?=.*\d).{8,40}$">
+        <div class="error-message" id="passwordError"></div>
+
+        <label for="confirmPassword">Повторите пароль:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <div class="error-message" id="confirmPasswordError"></div>
+
+        <button type="button" onclick="validateForm()">Отправить</button>
+    </form>
+
+    <script src="index.js">
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+.elem__container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.elem {
+    padding: 90px;
+    color: aliceblue;
+    background-color: rgb(66, 97, 97);
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.display-none {
+    display: none;
+}
