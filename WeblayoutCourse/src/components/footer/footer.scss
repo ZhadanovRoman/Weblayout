@@ -1,0 +1,412 @@
+.footer {
+  $root: &;
+
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 32px 0;
+    border: 1px solid $borderGrey;
+  }
+
+  &__top-address {
+    display: flex;
+    flex-direction: column;
+    @include pDescr();
+    font-style: normal;
+  }
+
+  &__top-address span:first-child {
+    @include h3title();
+
+  }
+
+  &__top-messengers-icon {
+    width: 40px;
+    height: 40px;
+
+  }
+
+  &__top-btn {
+    width: 329px;
+    height: 50px;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    padding: 8px 25px;
+    border: 2px solid $purple;
+    color: $purple;
+    border-radius: 50px;
+    transition: color .3s ease-in-out, border .3s ease-in-out, box-shadow .3s ease-in-out, outline .3s ease-in-out;
+  }
+
+  &__top-btn_320 {
+    display: none;
+
+  }
+
+  &__top-btn:focus-visible {
+
+    box-shadow: inset 0 0 0 2px $purple;
+    border: 2px solid transparent;
+    outline: 2px solid $purpleCheck;
+
+  }
+
+  &__top-btn:hover {
+    background-color: $purple;
+    color: $white;
+  }
+
+  &__top-btn:active {
+    background-color: $purpleFocus;
+    color: $white;
+    border: 3px solid $purpleBorder;
+  }
+
+  &__top-messengers-title {
+    @include h3title();
+    margin-bottom: 10px;
+  }
+
+  &__top-messengers-icon {
+    margin-right: 20px;
+  }
+
+  &__top-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__inpt-name-block {
+    position: relative;
+    //margin-bottom: 20px;
+  }
+
+  &__top-label-name {
+    position: absolute;
+    top: -16px;
+    left: 20px;
+    color: $redError;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  &__bottom_section {
+    background-color: $black;
+    padding: 50px 0 40px 0;
+
+  }
+
+  &__bottom_container {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__bottom-logo {
+    width: 173px;
+    height: 40px;
+    z-index: 0;
+  }
+
+  &__bottom-networks {
+    svg {
+      width: 45px;
+      height: 45px;
+      margin-left: 20px;
+      z-index: 0;
+    }
+  }
+
+  &__link {
+    width: max-content;
+    height: max-content;
+    z-index: 1;
+  }
+
+  &__link-messenger {
+    transition: opacity .3s ease-in-out;
+  }
+
+  &__link-messenger:focus-visible,
+  &__link-messenger:hover {
+    opacity: .5;
+  }
+
+  &__link-messenger:active {
+    opacity: 1;
+  }
+
+  &__bottom-image {
+    path {
+      transition: fill .3s ease-in-out;
+    }
+  }
+
+  &__bottom-image:hover {
+    path {
+      fill: $white;
+    }
+
+  }
+
+  &__bottom-image:active {
+    path {
+      fill: $purple;
+    }
+
+  }
+
+  @media only screen and (max-width: 1300px) {
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 38px 0;
+    }
+
+    &__top-address span:first-child {
+      margin-bottom: 10px;
+    }
+
+    &__top-address {
+      margin-bottom: 30px;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &__top-btn {
+      width: 343px;
+    }
+
+    &__top-messengers-title {
+      margin-bottom: 5px;
+    }
+
+    &__top-form {
+      margin-bottom: 10px;
+    }
+
+    &__bottom {
+      padding: 40px 0 30px 0;
+    }
+
+    &__bottom-logo {
+      margin-top: 10px;
+    }
+
+    &__bottom-networks {
+      svg {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    &__top-form {
+      margin-bottom: 17px;
+    }
+
+    &__bottom_section {
+      padding: 40px 0 40px 0;
+
+    }
+
+    &__top-address {
+      margin-bottom: 31px;
+
+    }
+
+    &__top-btn {
+      width: 343px;
+    }
+  }
+
+  @media only screen and (max-width: 769px) {
+
+    &__top-btn {
+      width: 317px;
+    }
+
+    &__top-form {
+      margin-bottom: 30px;
+      justify-content: space-between;
+    }
+
+    &__top {
+      padding: 42px 0 38px 0;
+    }
+
+    &__bottom_section {
+      padding: 40px 0;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px 0 47px 0;
+      border: none;
+    }
+
+    &__top-address {
+      margin-bottom: 18px;
+    }
+
+    &__top-address span:first-child {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    &__top-btn_1920 {
+      display: none;
+    }
+
+    &__top-btn_320 {
+      display: block;
+      width: max-content;
+      height: max-content;
+      //margin-top: 20px;
+      font-size: 12px;
+      line-height: 16px;
+      padding: 10px 33px;
+    }
+
+    &__top-form {
+      margin-bottom: 20px;
+      justify-content: flex-start;
+    }
+
+    &__top-messengers-title {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    &__top-messengers-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+
+    &__bottom {
+      padding-top: 20px;
+      padding-bottom: 18px;
+    }
+
+    &__bottom_container {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-right: 9px;
+    }
+
+    &__bottom-logo {
+      width: 97px;
+      height: 22px;
+      margin-top: 15px;
+    }
+
+    &__bottom_section {
+      padding: 20px 0;
+    }
+
+    &__bottom-networks {
+      svg {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+      }
+    }
+
+    &__link-network:last-child {
+      margin-left: 20px;
+    }
+
+  }
+}
+
+.footer-input {
+  width: 270px;
+  height: 50px;
+  @include pDescr();
+  padding: 8px 25px;
+  border: 1px solid $textBlack;
+  border-radius: 50px;
+  margin-right: 19px;
+  transition: background-color .3s ease-in-out, border .3s ease-in-out;
+
+}
+
+.footer-inpt-err {
+  border: 1px solid $redError;
+  background-color: $white;
+}
+
+.footer-input:focus-visible,
+.footer-input:hover {
+  background-color: #ECECEC;
+}
+
+.footer-input::placeholder {
+  @include pDescr();
+  letter-spacing: 0em;
+  color: $textGrey;
+}
+
+@media (min-width: 1025px) and (max-width: 1755px) {
+
+  .footer-input {
+    margin-bottom: 13px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .footer-input {
+
+    margin-bottom: 13px;
+  }
+
+  .footer-input:first-child {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 381px) and (max-width: 769px) {
+
+  .footer-input {
+    width: 323px;
+    margin-right: 0;
+    margin-bottom: 13px;
+  }
+
+  .footer-input:first-child {}
+}
+
+@media only screen and (max-width: 380px) {
+  .footer-input {
+    width: 290px;
+    height: 40px;
+    margin-bottom: 21px;
+  }
+
+}
+
+@media only screen and (max-width: 310px) {
+  .footer-input {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 21px;
+  }
+
+}

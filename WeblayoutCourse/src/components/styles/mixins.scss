@@ -1,0 +1,35 @@
+@mixin h2title {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 65px;
+    color: $textBlack;
+}
+
+@mixin h3title {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    color: $textBlack;
+}
+
+@mixin pDescr {
+    font-family: 'Open Sans', 'sans-serif';
+    font-stretch: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $textBlack;
+}
+
+
+
+@mixin spanDescr {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $textGrey;
+}
+

@@ -1,0 +1,237 @@
+/// gallery
+.main {
+  $root: &;
+
+  &__gallery {
+    padding-top: 80px;
+    padding-bottom: 78px;
+    background-image: url('/src/assets/icons/galleryBG.png');
+
+  }
+
+  &__gallery-title {
+    @include h2title();
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  &__gallery-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ///////////// gallery-check
+  &__gallery-check-block {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
+  &__checkBox {
+    position: relative;
+    padding-left: 20px;
+  }
+
+
+  &__gallery-check {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  &__gallery-check-label {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $white;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+  }
+
+  &__gallery-check-label::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid $white;
+    position: absolute;
+    left: 0;
+    bottom: 9px;
+    z-index: 1;
+    transition: border .3s ease-in-out;
+  }
+
+  &__gallery-check-label::after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $purpleCheck;
+    block-size: cover;
+    position: absolute;
+    left: 5px;
+    top: 14px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+  }
+
+  &__gallery-check:checked+&__gallery-check-label::before {
+    border: 1px solid $purpleCheck;
+  }
+
+  &__gallery-check:checked+&__gallery-check-label::after {
+    opacity: 1;
+  }
+
+  &__gallery-check:checked+&__gallery-check-label {
+    color: $purpleCheck;
+  }
+
+  &__gallery-check:hover+&__gallery-check-label::before {
+    border: 1px solid $purpleCheck;
+  }
+
+  &__gallery-check:focus-visible+&__gallery-check-label::before {
+    border: 1px solid $purpleCheck;
+  }
+
+  &__gallery-check:focus-visible+&__gallery-check-label {
+    color: $purpleCheck;
+  }
+
+  ////////// gallery-image
+  &__gallery-img-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__gallery-item-picture {
+    display: block;
+    width: 31%;
+    height: 100%;
+  }
+
+  &__gallery-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  &__gallery-item-picture:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  @media only screen and (max-width: 1650px) {
+    &__gallery {
+      background-size: cover;
+      padding-bottom: 80px;
+    }
+
+    &__gallery-box {
+      flex-direction: column;
+    }
+
+    &__gallery-check-block {
+      margin-bottom: 28px;
+    }
+
+    &__gallery-img-block {
+
+      height: max-content;
+    }
+
+  }
+
+  @media (min-width: 1025px) and (max-width: 1300px) {
+    &__gallery {
+      background-image: url('/src/assets/icons/galleryBG1024.png');
+      padding-bottom: 80px;
+    }
+
+    &__gallery-title {
+      margin-bottom: 18px;
+    }
+
+    &__gallery-img-block {
+      flex-wrap: wrap;
+
+    }
+
+
+    &__gallery-item-picture:not(:last-child) {
+      margin-right: 0;
+    }
+
+    &__gallery-item-picture {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 721px) and (max-width: 1024px) {
+    &__gallery {
+      background-image: url('/src/assets/icons/galleryBG768.png');
+    }
+
+    &__gallery-title {
+      margin-bottom: 18px;
+    }
+
+
+    &__gallery-item-picture:not(:last-child) {
+      margin: 0;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    &__gallery-img-block {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      height: max-content;
+    }
+
+    &__gallery {
+      background-size: cover;
+    }
+
+    &__gallery-img {
+      width: 100%;
+    }
+
+    &__gallery-item-picture {
+      width: 97%;
+    }
+
+    &__gallery-item-picture:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    &__gallery {
+      background-image: url('/src/assets/icons/galleryBG320.png');
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__gallery-title {
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 12px;
+    }
+
+    &__gallery-img-block {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__gallery-item-picture:not(:last-child) {
+      margin: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+}

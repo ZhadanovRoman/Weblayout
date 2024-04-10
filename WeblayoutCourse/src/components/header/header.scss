@@ -1,0 +1,127 @@
+.header {
+  $root: &;
+  background-color: $black;
+
+
+  &__container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__logo-link {
+    width: max-content;
+    height: max-content;
+    z-index: 1;
+  }
+
+  &__logo {
+    display: block;
+    width: 173px;
+    height: 40px;
+    z-index: 0;
+  }
+
+  &__search-btn {
+    margin-left: 113px;
+    z-index: 100;
+    width: 36px;
+    height: 36px;
+  }
+
+  &__search-btn:focus-visible {
+    background-color: $purple;
+  }
+
+  &__search {
+    width: 28px;
+    height: 28px;
+    z-index: 0;
+
+    rect,
+    path {
+      transition: fill .3s ease-in-out;
+    }
+
+  }
+
+  &__search:hover {
+    rect {
+      fill: $purpleCheck;
+    }
+
+    path {
+      fill: $purpleCheck;
+    }
+  }
+
+  &__search:active {
+    rect {
+      fill: $purple;
+    }
+
+    path {
+      fill: $purple;
+    }
+  }
+
+  &__mobile-nav {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    &__container{
+    flex-wrap: wrap;
+
+    padding-top: 32px;
+    padding-bottom: 23px;
+    }
+    &__descktop-nav {
+      display: none;
+    }
+
+    &__search-btn {
+      margin-left: auto;
+    }
+
+    &__mobile-nav {
+      display: flex;
+      margin-top: 25px;
+    }
+
+    &__logo {
+      display: block;
+      width: 188px;
+      height: 42px;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    &__container{
+    padding-top: 10px;
+    padding-bottom: 11px;
+    overflow-x: scroll;
+  }
+    &__logo {
+      width: 97px;
+      height: 22px;
+    }
+
+    &__search {
+      width: 18px;
+      height: 18px;
+    }
+
+    &__search-btn {
+      margin-left: 0;
+    }
+
+    &__mobile-nav {
+      margin-top: 3px;
+    }
+  }
+}

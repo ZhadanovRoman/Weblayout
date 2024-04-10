@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.rectangle,
+.square,
+.circle,
+.triangle{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.rectangle,
+.square,
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(188, 64, 186);
+}
+
+.rectangle{
+    width: 150px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.triangle {
+    width:  0;
+    height: 0 ;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 87px solid rgb(188, 64, 186);
+}
+
+
+@keyframes pulseAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes moveAnimation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes rotateAnimation {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes transform3DAnimation {
+    0%, 100% {
+        transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(500px) rotateX(180deg) rotateY(180deg);
+    }
+}
+
+.pulseAnimation{
+    animation-name: pulseAnimation;
+}
+
+.moveAnimation{
+    animation-name: moveAnimation;
+}
+
+.rotateAnimation{
+    animation-name: rotateAnimation;
+}
+
+.transform3DAnimation{
+    animation-name: transform3DAnimation;
+}
+
+.classMarker{
+    opacity: 1;
+}

@@ -1,0 +1,96 @@
+- var checkList = ['XIX век','XX век','Современность']
+- var galleryImages = [
+- { urlImg:'gal1.png', urlImg1024:'gal1_1024.png', urlImg768:'gal1_768.png', urlImg320:'gal1_320.png'},
+- { urlImg:'gal2.png', urlImg1024:'gal2_1024.png', urlImg768:'gal2_768.png', urlImg320:'gal2_320.png'},
+- { urlImg:'gal3.png', urlImg1024:'gal3_1024.png', urlImg768:'gal3_768.png', urlImg320:'gal3_320.png'},]
+- var catalogItems = [
+- {urlImg: 'girlandayo.png', urlImg1024: 'girlandayo1024.png', urlImg768: 'girlandayo768.png', urlImg320: 'girlandayo320.png', nameArtist: 'Доменико Гирландайо', lifeYear: '2 июня 1448–11 января 1494', descr: 'Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).'},
+- {urlImg: 'verrokyo.png', urlImg1024: 'verrokyo1024.png', urlImg768: 'verrokyo768.png', urlImg320: 'verrokyo320.png', nameArtist: 'Андреа дель Верроккьо', lifeYear: '1435–10 октября 1488', descr: 'Творческий путь молодого Андреа, как и многих знаменитых художников и скульпторов эпохи Возрождения, начался с обучения и работы в одной из ювелирных мастерских Флоренции. Там он занимался не только изготовлением драгоценных украшений, но и познавал основы живописи, пластики и архитектуры. Его первым учителем был Джулиано Веррокки, фамилию которого в несколько изменённом виде Андреа заимствовал для своего будущего псевдонима.'},
+- {urlImg: 'credi.png', urlImg1024: 'credi1024.png', urlImg768: 'credi768.png', urlImg320: 'credi320.png', nameArtist: 'Лоренцо ди Креди', lifeYear: '1459–12 января 1537', descr: 'Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).'}];
+- var eventsItems = [
+- {titleId:'first-event-title', locationId:'first-event-location', urlImg:'events1.png', urlImg320:'ev1-320.png', urlImg768: 'ev1-768.png', urlImg1024: 'ev1-1024.png', location: 'Музей им. Щусева с 20 марта по 30 апреля', title: 'Книжная гравюра в живом восприятии', descr: 'Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо'},
+- {titleId:'second-event-title', locationId:'second-event-location', urlImg:'events2.png', urlImg320:'ev2-320.png', urlImg768: 'ev2-768.png', urlImg1024: 'ev2-1024.png', location: 'ММОМА 24 марта 19:00', title: '«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.', descr: 'Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта'},
+- {titleId:'third-event-title', locationId:'third-event-location', urlImg:'events3.png', urlImg320:'ev3-320.png', urlImg768: 'ev3-768.png', urlImg1024: 'ev3-1024.png', location: 'Еврейский музей с 31 марта по 21 апреля', title: 'Выставка «Формация 2020»', descr: 'Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений'}];
+- var partners = [{url:'partner1',descr: 'FreelandsFoundation icon'}, {url:'partner2',descr:'InstituteForContemporary icon'}]
+- var partners_320 = [{url:'partner320_1',descr: 'FreelandsFoundation icon'}, {url:'partner320_2',descr:'InstituteForContemporary icon'} ]
+
+mixin main(props)
+  .main&attributes(attributes)(data-component='main' )
+    section(class='main__hero ')
+      div(class='main__hero-container container container-padding')
+        .main__hero-descr-block
+          h1.main__hero-title Прикоснитесь к прекрасному
+          p(class='main__hero-paragraph ') Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений
+          button.main__hero-btn Подписаться на рассылку
+    section(class='main__about')
+      div(class="main__about-container container container-padding")
+        .main__about-descr
+          h2.main__about-title о нас
+          p(class='main__about-paragraph font-size16') Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв населения, а значит, должны быть разоблачены.
+    section(class='main__gallery')
+      div(class="main__gallery_container container container-padding")
+        .main__gallery-block
+          h2.main__gallery-title галерея
+          .main__gallery-box
+            .main__gallery-check-block
+              each i in checkList
+                .main__checkBox
+                  input(type="checkbox" id=`${i}`).main__gallery-check
+                  label(for=`${i}`).main__gallery-check-label!=i
+            .main__gallery-img-block
+              each i in galleryImages
+                picture.main__gallery-item-picture
+                  source(srcset=`../assets/images/${i.urlImg}`, media='(min-width: 1200px)')
+                  source(srcset=`../assets/images/${i.urlImg320}`, media='(min-width: 1025px)')
+                  source(srcset=`../assets/images/${i.urlImg1024}`, media='(min-width: 950px)')
+                  source(srcset=`../assets/images/${i.urlImg768}`, media='(min-width: 720px)')
+                  source(srcset=`../assets/images/${i.urlImg}`, media='(min-width: 380px)')
+                  source(srcset=`../assets/images/${i.urlImg320}`, media='(min-width: 310px)')
+                  img(src=`../assets/images/${i.urlImg768}`, alt=i.nameArtist, height="auto").main__gallery-img
+    section(class='main__catalog')
+      div(class="main__catalog_container container container-padding")
+        h2.main__catalog-title каталог
+        p(class='main__catalog-descr font-size16') Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+        ul.main__catalog-list
+          each i in catalogItems
+            li.main__catalog-item
+              picture.main__catalog-item-picture
+                source(srcset=`../assets/images/${i.urlImg}`, media='(min-width: 1025px)')
+                source(srcset=`../assets/images/${i.urlImg1024}`, media='(min-width: 769px)')
+                source(srcset=`../assets/images/${i.urlImg768}`, media='(min-width: 400px)')
+                img(src=`../assets/images/${i.urlImg320}`, alt=i.nameArtist, height="auto").main__catalog-item-img
+              .main__catalog-item-block
+                h3.main__catalog-item-name!=i.nameArtist
+                span.main__catalog-item-year!=i.lifeYear
+                p(class='main__catalog-item-descr ')!=i.descr
+    section(class='main__events')
+      div(class="main__events_container container container-padding")
+        h2.main__events-title события
+        ul.main__events-list
+          each i in eventsItems
+            li.main__events-item
+              picture.main__events-item-picture
+                source(srcset=`../assets/images/${i.urlImg}`, media='(min-width: 1025px)')
+                source(srcset=`../assets/images/${i.urlImg768}`, media='(min-width: 1025px)')
+                source(srcset=`../assets/images/${i.urlImg1024}`, media='(min-width: 959px)')
+                source(srcset=`../assets/images/${i.urlImg768}`, media='(min-width: 380px)')
+                img(src=`../assets/images/${i.urlImg320}`, alt=i.title).main__events-item-image
+              .main__events-item-block
+                span(class='main__events-item-location' id=i.locationId)!= i.location
+                h3(class='main__events-item-title' id=i.titleId)!= i.title
+                p.main__events-item-paragraph!= i.descr
+                a(href="#").main__item-link Подробнее
+    section(class='main__projects')
+      div(class="main__events_container container container-padding")
+        h2.main__projects-title проекты
+        p( class='main__projects-descr font-size16') Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершённой неузнаваемости.
+        .main__projects-partners
+          h3.main__projects-partners-title Партнёры проектов:
+          div(class='main__projects-partners-block main__projects-partners-block_1920')
+            each i in partners
+              +svg(i.url, i.descr).main__projects-partners-image
+        div(class='main__projects-partners-block main__projects-partners-block_320')
+          each i in partners_320
+            +svg(i.url, i.descr).main__projects-partners-img
+
+

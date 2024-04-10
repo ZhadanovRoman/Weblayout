@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div id="videoContainer">
+        <video id="myVideo" preload="metadata" width="500" height="350">
+            <source src="../3/video/helicopter.webm" type="video/webm">
+            
+        </video>
+        <div id="currentTime">00:00:000</div>
+    </div>
+
+    <script>
+        /// код абсолютно понятен 
+        const video = document.getElementById('myVideo');
+        const currentTimeDisplay = document.getElementById('currentTime');
+
+
+        video.addEventListener('loadeddata', function () {
+            video.currentTime = 0;
+            displayTime();
+        });
+
+
+        video.addEventListener('click', function () {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+
+
+        video.addEventListener('ended', function () {
+            video.currentTime = 0;
+            displayTime();
+            video.pause();
+        });
+
+
+        video.addEventListener('timeupdate', displayTime);
+
+
+        function displayTime() {
+            const minutes = Math.floor(video.currentTime / 60);
+            const seconds = Math.floor(video.currentTime % 60);
+            const milliseconds = Math.floor((video.currentTime % 1) * 1000);
+
+            currentTimeDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(milliseconds).padStart(3, '0')}`;
+        }
+    </script>
+</body>
+
+</html>
