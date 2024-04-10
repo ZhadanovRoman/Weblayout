@@ -1,0 +1,74 @@
+.main {
+  $root: &;
+
+
+  /////// about
+  &__about {
+    padding-top: 80px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+
+  }
+
+  &__about-descr {
+    width: 67%;
+    margin-bottom: 71px;
+  }
+
+  &__about-title {
+    @include h2title();
+    margin-bottom: 15px;
+  }
+
+
+  &__about-paragraph {
+    @include pDescr();
+
+  }
+
+  @media only screen and (min-width: 1921px) {
+    &__about-descr {
+      width: 80%;
+      margin-bottom: 100px;
+
+    }
+
+    &__about-paragraph {
+      font-size: 24px;
+
+    }
+  }
+
+  @media only screen and (max-width: 1650px) {
+    &__about-descr {
+      width: 100%;
+      margin-bottom: 70px;
+    }
+
+    &__about {
+      padding-top: 81px;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    &__about {
+      padding-top: 50px;
+    }
+
+    &__about-title {
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 11px;
+    }
+
+    &__about-descr {
+      width: 97%;
+      margin-bottom: 42px;
+    }
+
+    &__about-paragraph {
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+}

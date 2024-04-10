@@ -1,0 +1,8 @@
+-var menuItems = ['О нас', 'Галерея','Каталог','События','Проекты','Контакты']
+
+mixin header-nav(props)
+	.header-nav&attributes(attributes)(data-component='header-nav')
+		ul.header-nav__list
+			each i in menuItems
+				li
+					a(href='#').header-nav__item!= i

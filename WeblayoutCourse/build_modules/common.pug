@@ -1,0 +1,32 @@
+
+include ../src/components/header-nav/header-nav
+include ../src/components/footer/footer
+include ../src/components/main/main
+include ../src/components/header/header
+
+
+
+
+
+mixin svg(id,title)
+    svg(focusable = 'false')&attributes(attributes)
+        use(xlink:href=`#${id}`)
+        title!=`${title}`
+
+mixin picture(id, alt, sources, attributes)
+  picture
+    each source in sources
+      source(src=source.src, type=source.type, media=source.media)
+    img(src=`#${id}`, alt=alt, ...attributes)
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Blanchard
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet")
+    body
+        block body
